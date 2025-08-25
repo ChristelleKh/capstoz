@@ -1,0 +1,373 @@
+Sector,Projects,Capex,Avg_Capex,Jobs_Created,Avg_Jobs,Companies,Unused,Source_Country
+Software & IT services,346,"4,146.4",12.0,"36,023",104,196,,Canada
+Business services,240,"1,905.8",7.9,"19,625",81,156,,Canada
+Renewable energy,141,"60,882.8",431.8,"14,981",106,48,,Canada
+Financial services,136,"2,448.8",18.0,"8,769",64,65,,Canada
+Industrial equipment,97,"1,472.4",15.2,"6,884",70,73,,Canada
+Real estate,79,"8,648.9",109.5,"12,589",159,34,,Canada
+Metals,78,"17,642.0",226.2,"29,055",372,64,,Canada
+Transportation & Warehousing,73,"2,280.5",31.2,"5,846",80,47,,Canada
+Communications,70,"11,191.8",159.9,"7,017",100,33,,Canada
+Food and Beverages,62,"3,233.5",52.2,"6,766",109,41,,Canada
+Electronic components,55,"6,850.2",124.5,"16,171",294,37,,Canada
+Automotive components,40,"2,813.8",70.3,"11,416",285,21,,Canada
+Plastics,38,"1,203.1",31.7,"3,054",80,25,,Canada
+Chemicals,30,"2,224.2",74.1,"2,322",77,24,,Canada
+Aerospace,27,640.9,23.7,"3,423",126,11,,Canada
+Pharmaceuticals,26,946.0,36.4,"2,179",83,20,,Canada
+Consumer products,25,"1,136.3",45.5,"4,135",165,21,,Canada
+"Coal, oil & gas",20,"4,300.8",215.0,"2,049",102,13,,Canada
+Textiles,18,418.0,23.2,"2,449",136,13,,Canada
+Wood products,18,"1,068.5",59.4,"2,128",118,11,,Canada
+Automotive OEM,17,"1,784.8",105.0,"4,899",288,11,,Canada
+Non-automotive transport OEM,16,473.1,29.6,"3,593",224,10,,Canada
+"Paper, printing & packaging",16,"1,075.9",67.2,988,61,11,,Canada
+Minerals,14,"1,908.5",136.3,"1,456",104,13,,Canada
+Biotechnology,13,807.0,62.1,806,62,9,,Canada
+Healthcare,13,62.7,4.8,962,74,5,,Canada
+Semiconductors,12,768.3,64.0,"1,348",112,5,,Canada
+Medical devices,11,123.5,11.2,654,59,10,,Canada
+Space & defence,11,242.3,22.0,928,84,7,,Canada
+Building materials,9,825.5,91.7,748,83,6,,Canada
+Rubber,7,225.6,32.2,388,55,5,,Canada
+Hotels & tourism,6,684.6,114.1,336,56,3,,Canada
+Consumer electronics,5,113.6,22.7,841,168,3,,Canada
+Leisure & entertainment,5,282.5,56.5,821,164,4,,Canada
+Business machines & equipment,3,48.2,16.1,199,66,2,,Canada
+Ceramics & glass,3,36.0,12.0,101,33,2,,Canada
+Total,"1,780","144,916.7",81.4,"215,949",121,"1,028",,Canada
+Electronic components,369,"70,810.9",191.9,"222,414",602,215,,China
+Industrial equipment,253,"6,251.8",24.7,"30,943",122,163,,China
+Software & IT services,195,"4,251.5",21.8,"15,093",77,97,,China
+Communications,165,"24,778.4",150.2,"29,823",180,48,,China
+Automotive OEM,137,"40,971.1",299.1,"89,315",651,54,,China
+Transportation & Warehousing,128,"6,311.2",49.3,"12,065",94,63,,China
+Metals,106,"45,357.0",427.9,"78,460",740,73,,China
+Business services,102,"2,272.3",22.3,"7,191",70,66,,China
+Automotive components,89,"4,457.8",50.1,"34,087",383,68,,China
+Consumer products,85,"4,590.6",54.0,"39,315",462,46,,China
+Renewable energy,72,"35,522.0",493.4,"8,261",114,47,,China
+Consumer electronics,68,"4,962.2",73.0,"54,795",805,37,,China
+Textiles,60,"2,331.0",38.9,"79,192","1,319",49,,China
+Financial services,56,"1,066.2",19.0,"1,973",35,38,,China
+Biotechnology,55,"4,539.7",82.5,"6,125",111,34,,China
+Chemicals,54,"15,760.4",291.9,"10,935",202,45,,China
+Hotels & tourism,47,"3,352.3",71.3,"7,133",151,11,,China
+Business machines & equipment,35,663.0,18.9,"3,702",105,17,,China
+Medical devices,35,644.0,18.4,"3,929",112,31,,China
+Real estate,35,"10,101.7",288.6,"28,384",810,22,,China
+Rubber,31,"7,051.6",227.5,"23,172",747,18,,China
+Food and Beverages,29,896.0,30.9,"8,829",304,21,,China
+Semiconductors,29,"5,700.6",196.6,"7,853",270,19,,China
+Pharmaceuticals,28,818.8,29.2,"2,604",93,22,,China
+Non-automotive transport OEM,27,"2,513.5",93.1,"19,704",729,20,,China
+Plastics,26,"2,086.2",80.2,"12,974",499,21,,China
+Minerals,22,"14,942.6",679.2,"31,129","1,414",15,,China
+Building materials,15,"4,576.4",305.1,"11,348",756,12,,China
+"Coal, oil & gas",15,"9,136.5",609.1,"4,066",271,14,,China
+Aerospace,14,226.2,16.2,"1,164",83,7,,China
+Ceramics & glass,10,"1,497.2",149.7,"5,130",513,10,,China
+"Paper, printing & packaging",7,682.3,97.5,"1,107",158,6,,China
+Engines & turbines,6,463.6,77.3,"1,625",270,4,,China
+Space & defence,4,38.5,9.6,338,84,2,,China
+Leisure & entertainment,2,366.5,183.3,"2,157","1,078",1,,China
+Wood products,2,120.4,60.2,608,304,2,,China
+Total,"2,413","340,112.1",140.9,"896,943",371,"1,346",,China
+Software & IT services,695,"10,217.3",14.7,"132,143",190,385,,France
+Business services,629,"9,564.3",15.2,"62,461",99,304,,France
+Renewable energy,338,"101,320.0",299.8,"25,920",76,86,,France
+Transportation & Warehousing,241,"18,084.3",75.0,"38,273",158,75,,France
+Financial services,155,"1,689.7",10.9,"6,007",38,84,,France
+Industrial equipment,154,"1,478.1",9.6,"7,324",47,92,,France
+Communications,118,"8,490.3",72.0,"7,793",66,61,,France
+Electronic components,115,"4,620.3",40.2,"23,035",200,54,,France
+Food and Beverages,106,"3,048.5",28.8,"8,270",78,67,,France
+Consumer products,86,"2,716.8",31.6,"20,436",237,56,,France
+Chemicals,76,"8,504.6",111.9,"7,333",96,45,,France
+Non-automotive transport OEM,65,"1,008.4",15.5,"8,227",126,23,,France
+Textiles,56,"1,053.6",18.8,"8,441",150,30,,France
+Aerospace,52,"2,960.8",56.9,"12,879",247,24,,France
+Real estate,46,"2,474.5",53.8,"10,369",225,19,,France
+Automotive components,43,"2,230.9",51.9,"14,914",346,27,,France
+Pharmaceuticals,43,"5,104.2",118.7,"6,108",142,26,,France
+Building materials,37,"1,742.9",47.1,"3,093",83,12,,France
+"Coal, oil & gas",33,"32,081.9",972.2,"11,788",357,11,,France
+Hotels & tourism,32,"1,076.0",33.6,"3,633",113,13,,France
+Ceramics & glass,26,"1,237.7",47.6,"3,811",146,9,,France
+Biotechnology,25,916.0,36.6,"1,624",64,18,,France
+Space & defence,25,610.2,24.4,"2,983",119,12,,France
+Business machines & equipment,21,338.8,16.1,"1,379",65,12,,France
+Automotive OEM,20,"4,480.3",224.0,"12,150",607,9,,France
+Medical devices,20,324.7,16.2,"1,208",60,16,,France
+Metals,17,874.5,51.4,"2,025",119,15,,France
+Rubber,16,"1,062.8",66.4,"2,102",131,4,,France
+Semiconductors,13,"1,217.7",93.7,"1,180",90,10,,France
+Plastics,12,279.9,23.3,"1,065",88,11,,France
+Consumer electronics,9,106.5,11.8,565,62,6,,France
+Healthcare,8,280.1,35.0,"1,343",167,4,,France
+Leisure & entertainment,8,13.2,1.6,171,21,6,,France
+Minerals,8,969.9,121.2,"1,008",126,3,,France
+"Paper, printing & packaging",8,110.8,13.8,319,39,7,,France
+Wood products,7,72.1,10.3,181,25,4,,France
+Engines & turbines,3,111.1,37.0,414,138,2,,France
+Total,"3,366","232,473.5",69.1,"451,975",134,"1,563",,France
+Software & IT services,735,"10,524.6",14.3,"83,587",113,434,,Germany
+Industrial equipment,645,"11,119.5",17.2,"56,128",87,431,,Germany
+Transportation & Warehousing,635,"28,779.4",45.3,"86,421",136,159,,Germany
+Business services,350,"2,422.7",6.9,"20,501",58,240,,Germany
+Renewable energy,298,"105,240.9",353.2,"23,683",79,89,,Germany
+Electronic components,289,"24,236.2",83.9,"65,717",227,163,,Germany
+Automotive components,284,"14,268.3",50.2,"77,860",274,157,,Germany
+Food and Beverages,260,"10,931.9",42.0,"41,368",159,95,,Germany
+Chemicals,183,"9,285.3",50.7,"10,462",57,88,,Germany
+Metals,141,"10,244.3",72.7,"15,562",110,94,,Germany
+Plastics,139,"3,035.6",21.8,"9,229",66,85,,Germany
+Automotive OEM,120,"26,990.4",224.9,"64,202",535,64,,Germany
+Financial services,114,"2,192.5",19.2,"5,706",50,68,,Germany
+Real estate,88,"6,482.6",73.7,"20,158",229,37,,Germany
+Medical devices,86,"2,368.7",27.5,"11,205",130,49,,Germany
+Biotechnology,79,"5,910.0",74.8,"10,054",127,37,,Germany
+Communications,77,"6,175.2",80.2,"9,086",118,51,,Germany
+Consumer products,69,"1,909.4",27.7,"11,837",171,44,,Germany
+Pharmaceuticals,68,"2,636.0",38.8,"8,390",123,33,,Germany
+Textiles,48,"1,325.4",27.6,"16,922",352,33,,Germany
+Non-automotive transport OEM,47,"1,234.1",26.3,"6,364",135,28,,Germany
+Building materials,44,"1,678.0",38.1,"2,333",53,25,,Germany
+Semiconductors,39,"11,103.8",284.7,"7,667",196,12,,Germany
+Consumer electronics,37,"1,261.9",34.1,"8,880",240,21,,Germany
+Aerospace,36,"1,449.2",40.3,"4,637",128,22,,Germany
+Space & defence,36,"1,432.2",39.8,"5,812",161,18,,Germany
+Hotels & tourism,33,964.8,29.2,"1,694",51,12,,Germany
+Engines & turbines,30,970.2,32.3,"3,114",103,14,,Germany
+Rubber,29,"1,714.4",59.1,"4,850",167,13,,Germany
+Ceramics & glass,27,"1,492.5",55.3,"3,783",140,15,,Germany
+"Paper, printing & packaging",23,796.5,34.6,"1,308",56,16,,Germany
+Business machines & equipment,19,311.8,16.4,"2,134",112,15,,Germany
+Healthcare,16,107.9,6.7,803,50,9,,Germany
+Leisure & entertainment,11,163.4,14.9,"2,040",185,11,,Germany
+Wood products,10,406.4,40.6,"1,024",102,7,,Germany
+"Coal, oil & gas",7,"1,389.1",198.4,382,54,4,,Germany
+Minerals,4,337.1,84.3,557,139,3,,Germany
+Total,"5,156","312,892.3",60.7,"705,460",136,"2,515",,Germany
+Industrial equipment,328,"9,332.2",28.5,"49,447",150,213,,Japan
+Software & IT services,196,"3,898.8",19.9,"43,810",223,104,,Japan
+Business services,179,"2,579.2",14.4,"10,671",59,85,,Japan
+Transportation & Warehousing,153,"9,396.5",61.4,"20,145",131,82,,Japan
+Automotive components,142,"9,158.3",64.5,"40,670",286,105,,Japan
+Real estate,129,"27,111.8",210.2,"62,341",483,49,,Japan
+Electronic components,113,"28,326.3",250.7,"43,508",385,70,,Japan
+Food and Beverages,111,"6,224.8",56.1,"16,290",146,74,,Japan
+Communications,100,"12,442.4",124.4,"9,491",94,38,,Japan
+Chemicals,92,"6,634.8",72.1,"6,700",72,73,,Japan
+Financial services,72,"1,469.8",20.4,"5,544",77,48,,Japan
+Renewable energy,66,"34,343.9",520.4,"7,967",120,37,,Japan
+Business machines & equipment,65,"1,541.5",23.7,"9,398",144,38,,Japan
+Automotive OEM,60,"25,524.4",425.4,"44,636",743,37,,Japan
+Metals,58,"3,495.4",60.3,"9,532",164,52,,Japan
+Plastics,57,"4,981.7",87.4,"11,057",193,46,,Japan
+Medical devices,53,"1,742.9",32.9,"4,726",89,37,,Japan
+Consumer products,51,"1,456.6",28.6,"10,712",210,31,,Japan
+Semiconductors,47,"5,752.7",122.4,"15,695",333,33,,Japan
+Pharmaceuticals,46,"3,497.4",76.0,"4,218",91,27,,Japan
+Rubber,46,"3,391.8",73.7,"8,548",185,18,,Japan
+Biotechnology,44,"8,321.7",189.1,"7,128",162,24,,Japan
+Non-automotive transport OEM,25,"1,043.5",41.7,"8,635",345,18,,Japan
+Healthcare,16,270.3,16.9,"3,275",204,6,,Japan
+Ceramics & glass,14,768.8,54.9,"2,219",158,10,,Japan
+Textiles,13,142.4,11.0,"4,709",362,12,,Japan
+"Coal, oil & gas",12,"6,054.3",504.5,"1,426",118,9,,Japan
+Aerospace,11,241.7,22.0,"1,165",105,9,,Japan
+Consumer electronics,9,95.3,10.6,788,87,7,,Japan
+Engines & turbines,9,149.0,16.6,492,54,8,,Japan
+"Paper, printing & packaging",8,289.0,36.1,"2,561",320,8,,Japan
+Hotels & tourism,7,132.5,18.9,"1,438",205,5,,Japan
+Space & defence,7,137.7,19.7,539,77,4,,Japan
+Wood products,3,131.6,43.9,"2,111",703,3,,Japan
+Leisure & entertainment,2,137.2,68.6,"1,767",883,2,,Japan
+Building materials,1,150.0,150.0,100,100,1,,Japan
+Minerals,1,690.0,690.0,418,418,1,,Japan
+Total,"2,346","221,058.3",94.2,"473,877",201,"1,325",,Japan
+Software & IT services,354,"4,158.3",11.7,"33,924",95,225,,Netherlands
+Business services,307,"3,139.3",10.2,"23,477",76,199,,Netherlands
+Food and Beverages,147,"8,757.6",59.6,"23,579",160,73,,Netherlands
+Industrial equipment,146,"4,107.0",28.1,"16,790",115,102,,Netherlands
+Transportation & Warehousing,145,"5,951.5",41.0,"11,419",78,81,,Netherlands
+Financial services,83,"1,164.7",14.0,"3,053",36,50,,Netherlands
+Communications,81,"8,855.8",109.3,"5,470",67,46,,Netherlands
+Aerospace,72,"6,985.6",97.0,"22,258",309,16,,Netherlands
+Chemicals,66,"4,260.7",64.6,"3,892",58,23,,Netherlands
+Electronic components,65,"12,162.2",187.1,"12,125",186,35,,Netherlands
+Renewable energy,60,"13,145.2",219.1,"3,692",61,35,,Netherlands
+Real estate,53,"7,258.2",136.9,"25,421",479,22,,Netherlands
+Consumer products,46,"2,317.7",50.4,"14,024",304,27,,Netherlands
+Automotive components,37,"1,051.5",28.4,"7,969",215,22,,Netherlands
+Metals,36,902.1,25.1,"2,162",60,28,,Netherlands
+Automotive OEM,35,"3,932.2",112.3,"12,330",352,14,,Netherlands
+Hotels & tourism,34,"1,496.9",44.0,"1,935",56,13,,Netherlands
+Non-automotive transport OEM,32,296.4,9.3,"1,546",48,23,,Netherlands
+Plastics,32,567.7,17.7,"1,122",35,19,,Netherlands
+Biotechnology,21,530.0,25.2,792,37,12,,Netherlands
+"Coal, oil & gas",20,"35,585.6",1779.3,"5,034",251,15,,Netherlands
+Textiles,19,146.2,7.7,783,41,13,,Netherlands
+Consumer electronics,16,244.0,15.3,"2,250",140,11,,Netherlands
+Medical devices,15,498.0,33.2,"1,718",114,11,,Netherlands
+Healthcare,14,149.3,10.7,698,49,9,,Netherlands
+Pharmaceuticals,14,364.1,26.0,"1,144",81,11,,Netherlands
+Semiconductors,13,"2,981.3",229.3,"2,796",215,6,,Netherlands
+Wood products,13,240.2,18.5,"1,316",101,9,,Netherlands
+Building materials,11,"1,093.7",99.4,"2,190",199,9,,Netherlands
+Space & defence,10,142.7,14.3,533,53,7,,Netherlands
+Leisure & entertainment,6,75.8,12.6,377,62,5,,Netherlands
+"Paper, printing & packaging",6,93.5,15.6,239,39,5,,Netherlands
+Rubber,6,33.0,5.5,100,16,2,,Netherlands
+Business machines & equipment,5,38.0,7.6,255,51,3,,Netherlands
+Minerals,2,134.1,67.0,428,214,2,,Netherlands
+Ceramics & glass,1,1.4,1.4,30,30,1,,Netherlands
+Total,"2,023","132,861.6",65.7,"246,871",122,"1,138",,Netherlands
+Electronic components,101,"54,597.8",540.6,"93,244",923,49,,South korea
+Automotive components,98,"5,986.9",61.1,"38,698",394,67,,South korea
+Software & IT services,98,981.9,10.0,"7,159",73,76,,South korea
+Industrial equipment,69,"1,705.0",24.7,"9,131",132,48,,South korea
+Financial services,59,"1,357.4",23.0,"4,804",81,26,,South korea
+Food and Beverages,50,"2,467.0",49.3,"8,955",179,29,,South korea
+Business services,47,549.3,11.7,"3,522",74,34,,South korea
+Metals,44,"35,091.9",797.5,"22,123",502,30,,South korea
+Transportation & Warehousing,43,"1,919.3",44.6,"4,283",99,18,,South korea
+Semiconductors,35,"52,665.7",1504.7,"15,853",452,23,,South korea
+Renewable energy,34,"38,352.2",1128.0,"5,967",175,22,,South korea
+Chemicals,33,"2,002.3",60.7,"3,684",111,25,,South korea
+Communications,30,"5,238.2",174.6,"9,816",327,18,,South korea
+Automotive OEM,24,"10,421.3",434.2,"26,933","1,122",8,,South korea
+Biotechnology,22,875.9,39.8,"1,325",60,18,,South korea
+Plastics,22,"1,131.0",51.4,"3,670",166,18,,South korea
+Rubber,18,"3,437.7",191.0,"5,553",308,7,,South korea
+Consumer electronics,17,"1,141.5",67.1,"7,759",456,8,,South korea
+Consumer products,15,501.5,33.4,"4,678",311,6,,South korea
+Textiles,14,355.7,25.4,"11,232",802,12,,South korea
+Medical devices,13,99.2,7.6,427,32,13,,South korea
+Aerospace,10,199.7,20.0,963,96,5,,South korea
+Pharmaceuticals,9,330.2,36.7,877,97,9,,South korea
+Space & defence,8,115.0,14.4,676,84,5,,South korea
+Business machines & equipment,7,124.4,17.8,"3,214",459,5,,South korea
+"Coal, oil & gas",7,"2,608.5",372.6,368,52,6,,South korea
+Non-automotive transport OEM,7,107.6,15.4,447,63,6,,South korea
+Real estate,5,528.4,105.7,"1,687",337,5,,South korea
+Minerals,4,280.7,70.2,540,135,4,,South korea
+Hotels & tourism,3,280.2,93.4,"2,175",725,2,,South korea
+Ceramics & glass,2,638.5,319.3,"3,204","1,602",1,,South korea
+Leisure & entertainment,2,137.2,68.6,"1,767",883,2,,South korea
+Healthcare,1,85.5,85.5,395,395,1,,South korea
+"Paper, printing & packaging",1,.6,0.6,30,30,1,,South korea
+Total,952,"226,315.2",237.7,"305,159",320,544,,South korea
+Business services,285,"2,757.0",9.7,"32,001",112,187,,Uae
+Transportation & Warehousing,206,"17,105.6",83.0,"41,935",203,62,,Uae
+Software & IT services,132,871.7,6.6,"13,622",103,93,,Uae
+Renewable energy,104,"113,293.5",1089.4,"25,972",249,29,,Uae
+Real estate,87,"69,935.3",803.9,"38,009",436,44,,Uae
+Financial services,78,"1,543.7",19.8,"4,079",52,40,,Uae
+Food and Beverages,49,"2,160.9",44.1,"8,989",183,22,,Uae
+Communications,40,"6,470.3",161.8,"4,146",103,23,,Uae
+Hotels & tourism,35,"1,412.3",40.4,"2,837",81,29,,Uae
+"Coal, oil & gas",22,"9,618.7",437.2,"4,091",185,15,,Uae
+Consumer products,21,650.0,31.0,"5,334",254,16,,Uae
+Industrial equipment,20,271.8,13.6,"1,249",62,17,,Uae
+Textiles,17,438.4,25.8,"5,720",336,11,,Uae
+Plastics,16,810.6,50.7,"2,692",168,10,,Uae
+Business machines & equipment,12,134.4,11.2,453,37,1,,Uae
+Chemicals,11,471.1,42.8,"1,740",158,6,,Uae
+Electronic components,10,259.1,25.9,"1,426",142,8,,Uae
+Healthcare,9,283.2,31.5,"2,233",248,7,,Uae
+Semiconductors,9,"18,595.1",2066.1,"4,812",534,1,,Uae
+Leisure & entertainment,5,8.8,1.8,169,33,5,,Uae
+Medical devices,5,197.9,39.6,449,89,3,,Uae
+Aerospace,4,23.2,5.8,86,21,3,,Uae
+Consumer electronics,3,63.0,21.0,621,207,2,,Uae
+Non-automotive transport OEM,3,111.4,37.1,"1,363",454,3,,Uae
+"Paper, printing & packaging",3,105.3,35.1,300,100,3,,Uae
+Space & defence,3,39.8,13.3,281,93,2,,Uae
+Ceramics & glass,2,2.0,1.0,10,5,1,,Uae
+Engines & turbines,2,163.5,81.8,656,328,1,,Uae
+Metals,2,6.0,3.0,20,10,2,,Uae
+Minerals,2,560.3,280.1,210,105,2,,Uae
+Pharmaceuticals,2,111.4,55.7,320,160,2,,Uae
+Rubber,2,14.2,7.1,69,34,2,,Uae
+Automotive components,1,95.7,95.7,671,671,1,,Uae
+Automotive OEM,1,9.8,9.8,26,26,1,,Uae
+Building materials,1,21.8,21.8,200,200,1,,Uae
+Total,"1,204","248,616.7",206.5,"206,791",171,637,,Uae
+Business services,"2,240","13,875.7",6.2,"101,473",45,"1,336",,United kingdom
+Software & IT services,"1,275","14,010.9",11.0,"115,582",90,797,,United kingdom
+Financial services,692,"15,188.0",21.9,"33,865",48,381,,United kingdom
+Transportation & Warehousing,271,"13,224.1",48.8,"20,061",74,120,,United kingdom
+Industrial equipment,252,"3,196.2",12.7,"16,505",65,177,,United kingdom
+Renewable energy,245,"102,829.2",419.7,"32,428",132,89,,United kingdom
+Communications,244,"26,242.3",107.6,"23,433",96,132,,United kingdom
+Real estate,187,"15,752.2",84.2,"54,595",291,92,,United kingdom
+Food and Beverages,131,"3,885.4",29.7,"13,948",106,77,,United kingdom
+Consumer products,127,"4,521.9",35.6,"21,787",171,84,,United kingdom
+Electronic components,105,"2,853.7",27.2,"7,351",70,85,,United kingdom
+Chemicals,102,"9,162.9",89.8,"9,093",89,56,,United kingdom
+Hotels & tourism,91,"9,144.3",100.5,"14,760",162,40,,United kingdom
+Pharmaceuticals,87,"8,389.9",96.4,"13,504",155,38,,United kingdom
+Metals,81,"25,196.7",311.1,"29,319",361,57,,United kingdom
+Textiles,66,"1,272.2",19.3,"6,928",104,52,,United kingdom
+"Paper, printing & packaging",64,"2,697.0",42.1,"5,891",92,20,,United kingdom
+Aerospace,59,"2,141.3",36.3,"8,115",137,31,,United kingdom
+"Coal, oil & gas",58,"29,537.0",509.3,"12,736",219,40,,United kingdom
+Medical devices,58,459.5,7.9,"2,749",47,36,,United kingdom
+Biotechnology,54,"4,519.4",83.7,"5,172",95,38,,United kingdom
+Healthcare,44,551.2,12.5,"3,703",84,17,,United kingdom
+Plastics,38,695.1,18.3,"1,883",49,31,,United kingdom
+Non-automotive transport OEM,35,779.0,22.3,"4,104",117,28,,United kingdom
+Space & defence,35,615.4,17.6,"2,854",81,19,,United kingdom
+Leisure & entertainment,32,"1,507.0",47.1,"4,634",144,25,,United kingdom
+Business machines & equipment,31,520.2,16.8,"3,183",102,22,,United kingdom
+Automotive components,18,576.1,32.0,"3,655",203,15,,United kingdom
+Semiconductors,15,"1,275.9",85.1,"1,282",85,9,,United kingdom
+Consumer electronics,13,787.9,60.6,"3,301",253,12,,United kingdom
+Minerals,13,"1,095.0",84.2,"5,435",418,13,,United kingdom
+Building materials,12,247.6,20.6,551,45,7,,United kingdom
+Automotive OEM,9,540.7,60.1,"1,071",119,9,,United kingdom
+Engines & turbines,7,189.1,27.0,673,96,5,,United kingdom
+Ceramics & glass,6,52.0,8.7,218,36,5,,United kingdom
+Rubber,6,559.1,93.2,791,131,5,,United kingdom
+Wood products,6,244.8,40.8,"10,355","1,725",3,,United kingdom
+Total,"6,809","318,336.1",46.8,"596,988",87,"3,910",,United kingdom
+Software & IT services,"3,999","87,714.4",21.9,"602,388",150,"2,075",,United states
+Business services,"1,917","21,289.3",11.1,"257,720",134,"1,033",,United states
+Communications,"1,017","215,493.3",211.9,"142,915",140,330,,United states
+Financial services,844,"22,172.1",26.3,"54,122",64,425,,United states
+Industrial equipment,549,"12,345.8",22.5,"54,041",98,358,,United states
+Transportation & Warehousing,473,"26,557.7",56.1,"62,100",131,165,,United states
+Real estate,419,"48,583.3",116.0,"139,639",333,95,,United states
+Consumer products,395,"29,636.7",75.0,"184,078",466,121,,United states
+Food and Beverages,346,"20,135.4",58.2,"75,285",217,174,,United states
+Electronic components,339,"13,724.2",40.5,"71,535",211,208,,United states
+Medical devices,245,"8,214.8",33.5,"39,480",161,123,,United states
+Chemicals,225,"22,839.3",101.5,"24,099",107,120,,United states
+Biotechnology,209,"12,131.2",58.0,"19,244",92,133,,United states
+Semiconductors,200,"129,987.2",649.9,"80,877",404,85,,United states
+Pharmaceuticals,161,"12,109.1",75.2,"21,239",131,92,,United states
+Plastics,138,"13,130.0",95.1,"16,331",118,85,,United states
+Renewable energy,138,"57,416.5",416.1,"15,471",112,66,,United states
+Aerospace,135,"5,276.7",39.1,"19,734",146,66,,United states
+Automotive OEM,123,"26,912.9",218.8,"50,132",407,45,,United states
+Business machines & equipment,121,"3,844.0",31.8,"22,221",183,50,,United states
+Automotive components,117,"3,298.2",28.2,"25,713",219,84,,United states
+Textiles,89,"2,331.2",26.2,"21,022",236,56,,United states
+Metals,81,"5,142.9",63.5,"11,363",140,64,,United states
+Hotels & tourism,77,"4,184.9",54.3,"9,445",122,47,,United states
+"Coal, oil & gas",71,"88,835.4",1251.2,"26,009",366,42,,United states
+"Paper, printing & packaging",71,"2,770.0",39.0,"9,088",128,41,,United states
+Space & defence,51,993.3,19.5,"4,914",96,34,,United states
+Consumer electronics,50,"1,071.3",21.4,"9,632",192,28,,United states
+Healthcare,50,"1,588.9",31.8,"7,492",149,30,,United states
+Non-automotive transport OEM,48,884.9,18.4,"17,149",357,36,,United states
+Leisure & entertainment,37,"2,542.8",68.7,"5,016",135,30,,United states
+Ceramics & glass,30,"4,232.1",141.1,"9,556",318,14,,United states
+Building materials,24,645.4,26.9,937,39,15,,United states
+Minerals,19,"2,179.3",114.7,"1,385",72,15,,United states
+Rubber,19,"1,202.0",63.3,"4,074",214,11,,United states
+Engines & turbines,15,"1,267.0",84.5,"5,094",339,11,,United states
+Wood products,11,"1,152.8",104.8,"4,742",431,8,,United states
+Total,"12,853","913,836.1",71.1,"2,125,282",165,"6,109",,United states
