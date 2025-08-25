@@ -8,16 +8,21 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-from statsmodels.tsa.arima.model import ARIMA
 
-# -----------------------------------------------------------------------------
-# CONFIG: point these to your repo/branch/folder holding the data files
-# -----------------------------------------------------------------------------
-RAW_BASE = st.secrets.get(
-    "RAW_BASE",
-    "https://raw.githubusercontent.com/ChristelleKh/capstoz/main/",
-)
+# Try ARIMA; fall back to no-forecast mode if statsmodels missing
+try:
+    from statsmodels.tsa.arima.model import ARIMA
+    ARIMA_AVAILABLE = True
+except Exception:
+    ARIMA_AVAILABLE = False
 
+# =============================================================================
+# CONFIG
+# =============================================================================
+# If your data lives in a subfolder inside the repo (e.g., "data"), set it here:
+DATA_SUBFOLDER = ""  # e.g., "data" if your files are in /data; keep "" if in repo root
+
+# Exact filenames you provided
 FILES = {
     "world_bank": "world_bank_data_with_scores_and_continent.csv",
     "sectors": "merged_sectors_data.csv",
@@ -25,8 +30,14 @@ FILES = {
     "capex_eda": "capex_EDA.xlsx",
 }
 
-# Indicator weights (sum to 100). Negative direction only where specified.
+# Optional: RAW GitHub fallback (only used if local files are missing)
+# In Streamlit Cloud: Settings → Secrets → add RAW_BASE="https://raw.githubusercontent.com/<user>/<repo>/<branch>"
+RAW_BASE = st.secrets.get("RAW_BASE", "").strip()
+
+# Indicator weights (sum is arbitrary; normalized internally to present indicators)
+# Include negative direction for e.g. Inflation (higher is worse)
 INDICATOR_WEIGHTS = {
+    # Economic
     "GDP growth (annual %)": 10,
     "GDP per capita, PPP (current international $)": 8,
     "Current account balance (% of GDP)": 6,
@@ -34,297 +45,330 @@ INDICATOR_WEIGHTS = {
     "Inflation, consumer prices (annual %)": {"weight": 5, "direction": "negative"},
     "Exports of goods and services (% of GDP)": 5,
     "Imports of goods and services (% of GDP)": 5,
+    # Governance
     "Political Stability and Absence of Violence/Terrorism: Estimate": 12,
     "Government Effectiveness: Estimate": 10,
     "Control of Corruption: Estimate": 8,
+    # Infrastructure/Readiness
     "Access to electricity (% of population)": 9,
     "Individuals using the Internet (% of population)": 8,
     "Total reserves in months of imports": 8,
 }
 
-CATEGORY_BREAKDOWN = {
-    "Economic Fundamentals": [
-        "GDP growth (annual %)",
-        "GDP per capita, PPP (current international $)",
-        "Current account balance (% of GDP)",
-        "Foreign direct investment, net outflows (% of GDP)",
-        "Inflation, consumer prices (annual %)",
-        "Exports of goods and services (% of GDP)",
-        "Imports of goods and services (% of GDP)",
-    ],
-    "Governance & Institutions": [
-        "Political Stability and Absence of Violence/Terrorism: Estimate",
-        "Government Effectiveness: Estimate",
-        "Control of Corruption: Estimate",
-    ],
-    "Infrastructure & Readiness": [
-        "Access to electricity (% of population)",
-        "Individuals using the Internet (% of population)",
-        "Total reserves in months of imports",
-    ],
-}
+# Aliases to harmonize columns
+SCORE_ALIASES = ["Score", "composite_score", "viability_score", "score"]
+YEAR_ALIASES = ["Year", "year", "YEAR"]
+COUNTRY_ALIASES = ["Country", "country", "Country Name", "Country_Name", "CountryName"]
+GRADE_ALIASES = ["Grade", "grade"]
+CONTINENT_ALIASES = ["Continent", "continent", "Region"]
 
-# -----------------------------------------------------------------------------
-# Utilities
-# -----------------------------------------------------------------------------
-def raw_url(path: str) -> str:
+# =============================================================================
+# HELPERS: paths & loading
+# =============================================================================
+def _compose_local_path(fname: str) -> str:
+    base_dir = os.path.dirname(__file__)
+    if DATA_SUBFOLDER:
+        return os.path.join(base_dir, DATA_SUBFOLDER, fname)
+    return os.path.join(base_dir, fname)
+
+def _compose_raw_url(fname: str) -> str:
+    if not RAW_BASE:
+        return ""
     base = RAW_BASE.rstrip("/")
-    return f"{base}/{path.lstrip('/')}"
+    prefix = (DATA_SUBFOLDER.strip("/") + "/") if DATA_SUBFOLDER else ""
+    return f"{base}/{prefix}{fname}"
 
-def unique(seq):
-    """Keep order, drop duplicates."""
-    seen = set()
-    out = []
-    for x in seq:
-        if x not in seen:
-            out.append(x)
-            seen.add(x)
-    return out
-
-def dedupe_columns(df: pd.DataFrame) -> pd.DataFrame:
-    """Drop duplicate-named columns (keeps first occurrence)."""
-    if df is None:
-        return df
-    return df.loc[:, ~df.columns.duplicated()]
-
-@st.cache_data(show_spinner=False, ttl=60 * 10)
-def read_csv_from_github(path: str) -> pd.DataFrame:
-    url = raw_url(path)
+@st.cache_data(show_spinner=True)
+def read_csv_local_or_raw(fname: str) -> pd.DataFrame:
+    # 1) local
+    p = _compose_local_path(fname)
+    if os.path.exists(p):
+        return pd.read_csv(p)
+    # 2) RAW fallback
+    url = _compose_raw_url(fname)
+    if not url:
+        raise FileNotFoundError(f"CSV not found locally and RAW_BASE not set.\nMissing file: {p}")
     r = requests.get(url, timeout=60)
     r.raise_for_status()
-    df = pd.read_csv(io.BytesIO(r.content))
-    return dedupe_columns(df)
+    return pd.read_csv(io.BytesIO(r.content))
 
-@st.cache_data(show_spinner=False, ttl=60 * 10)
-def read_excel_from_github(path: str, sheet_name=0) -> pd.DataFrame:
-    url = raw_url(path)
+@st.cache_data(show_spinner=True)
+def read_excel_local_or_raw(fname: str, sheet_name=0) -> pd.DataFrame:
+    # 1) local
+    p = _compose_local_path(fname)
+    if os.path.exists(p):
+        return pd.read_excel(p, sheet_name=sheet_name, engine="openpyxl")
+    # 2) RAW fallback
+    url = _compose_raw_url(fname)
+    if not url:
+        raise FileNotFoundError(f"Excel not found locally and RAW_BASE not set.\nMissing file: {p}")
     r = requests.get(url, timeout=60)
     r.raise_for_status()
-    try:
-        df = pd.read_excel(io.BytesIO(r.content), sheet_name=sheet_name, engine="openpyxl")
-        return dedupe_columns(df)
-    except Exception as e:
-        raise RuntimeError(
-            "Reading Excel failed. Ensure `openpyxl` is installed and the file path/extension is correct."
-        ) from e
+    return pd.read_excel(io.BytesIO(r.content), sheet_name=sheet_name, engine="openpyxl")
 
-def col_present(df: pd.DataFrame, col: str) -> bool:
-    return col in df.columns
+# =============================================================================
+# HELPERS: schema harmonization & scoring
+# =============================================================================
+def first_present(df: pd.DataFrame, names: list[str]) -> str | None:
+    for n in names:
+        if n in df.columns:
+            return n
+    return None
 
-def minmax_series(s: pd.Series) -> pd.Series:
-    s = s.astype(float)
+def harmonize_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Rename common variants to canonical: Country, Year, Score, Grade, Continent."""
+    df = df.copy()
+    # Country
+    c = first_present(df, COUNTRY_ALIASES)
+    if c and c != "Country":
+        df.rename(columns={c: "Country"}, inplace=True)
+    # Year
+    y = first_present(df, YEAR_ALIASES)
+    if y and y != "Year":
+        df.rename(columns={y: "Year"}, inplace=True)
+    # Score
+    s = first_present(df, SCORE_ALIASES)
+    if s and s != "Score":
+        df.rename(columns={s: "Score"}, inplace=True)
+    # Grade
+    g = first_present(df, GRADE_ALIASES)
+    if g and g != "Grade":
+        df.rename(columns={g: "Grade"}, inplace=True)
+    # Continent
+    ct = first_present(df, CONTINENT_ALIASES)
+    if ct and ct != "Continent":
+        df.rename(columns={ct: "Continent"}, inplace=True)
+    return df
+
+def _minmax_per_group(series: pd.Series) -> pd.Series:
+    s = series.astype(float)
     mask = s.notna()
     if mask.sum() <= 1:
-        return pd.Series(np.nan, index=s.index)
+        return pd.Series(0.5, index=s.index)
     lo, hi = s[mask].min(), s[mask].max()
     if hi == lo:
         return pd.Series(0.5, index=s.index)
     return (s - lo) / (hi - lo)
 
-def grade_by_year(df: pd.DataFrame, score_col: str, year_col="Year"):
-    grades = []
-    for _, g in df.groupby(df[year_col], dropna=False):
-        p = g[score_col].rank(pct=True)
-        g_grade = pd.cut(
-            p,
-            bins=[0, 0.25, 0.50, 0.75, 0.90, 1.00],
-            labels=["D", "C", "B", "A", "A+"],
-            include_lowest=True,
-            right=True,
-        )
-        grades.append(g_grade)
-    return pd.concat(grades).sort_index()
+def grade_by_year(df: pd.DataFrame, score_col: str = "Score", year_col: str = "Year") -> pd.Series:
+    if score_col not in df.columns or year_col not in df.columns:
+        return pd.Series(index=df.index, dtype="object")
+    out = pd.Series(index=df.index, dtype="object")
+    for y, g in df.groupby(year_col):
+        pct = g[score_col].rank(pct=True)
+        bins = [0, 0.25, 0.50, 0.75, 0.90, 1.0]
+        labels = ["D", "C", "B", "A", "A+"]
+        out.loc[g.index] = pd.cut(pct, bins=bins, labels=labels, include_lowest=True, right=True)
+    return out
 
-def compute_scores(df: pd.DataFrame, year_col="Year", country_col="Country"):
-    """Use existing Score/Grade if present, else compute from weighted indicators."""
-    df = df.copy()
-
-    # Harmonize key columns
-    for want, alts in {
-        "Year": ["year", "Year ", "YEAR", "year_"],
-        "Country": ["country", "Country Name", "Country_Name", "CountryName"],
-    }.items():
-        if want not in df.columns:
-            for a in alts:
-                if a in df.columns:
-                    df.rename(columns={a: want}, inplace=True)
-                    break
-
-    # Short-circuit if already present
+def compute_score_if_missing(df: pd.DataFrame, indicator_weights: dict, year_col="Year") -> pd.DataFrame:
+    """
+    If 'Score' missing, compute from available indicator columns using weights.
+    Negative-direction indicators are inverted post min–max normalization.
+    Normalization is performed per Year (if Year exists), otherwise across all rows.
+    """
     if "Score" in df.columns:
-        if "Grade" not in df.columns and "Year" in df.columns:
-            df["Grade"] = grade_by_year(df, "Score", year_col=year_col)
-        return dedupe_columns(df)
+        return df
 
-    # Compute weighted score from available indicators
-    weight_entries = []
-    for key, meta in INDICATOR_WEIGHTS.items():
-        w = meta["weight"] if isinstance(meta, dict) else meta
-        direction = meta.get("direction", "positive") if isinstance(meta, dict) else "positive"
+    present = []
+    for key, meta in indicator_weights.items():
         if key in df.columns:
-            norm = minmax_series(df[key])
-            if direction == "negative":
-                norm = 1 - norm
-            weight_entries.append((key, w, norm))
+            w = meta["weight"] if isinstance(meta, dict) else meta
+            direction = meta.get("direction", "positive") if isinstance(meta, dict) else "positive"
+            present.append((key, w, direction))
+    if not present:
+        return df  # nothing to compute with
 
-    if not weight_entries:
-        st.warning("No matching indicator columns found to compute a score. Returning original dataframe.")
-        return dedupe_columns(df)
+    work = df.copy()
 
-    weights = np.array([w for _, w, _ in weight_entries], dtype=float)
+    # Min–max normalize each present indicator (per year if Year exists)
+    for key, _, direction in present:
+        norm_col = f"{key}__norm__"
+        if year_col in work.columns:
+            work[norm_col] = (
+                work.groupby(year_col, group_keys=False)[key].transform(_minmax_per_group)
+            )
+        else:
+            work[norm_col] = _minmax_per_group(work[key])
+
+        if direction == "negative":
+            work[norm_col] = 1 - work[norm_col]
+
+    # Normalize weights to present indicators
+    weights = np.array([w for _, w, _ in present], dtype=float)
     weights = weights / weights.sum()
 
-    score = np.zeros(len(df), dtype=float)
-    for (_, _, norm), w in zip(weight_entries, weights):
-        score += w * norm.fillna(norm.mean())
+    # Weighted sum into Score
+    score = np.zeros(len(work), dtype=float)
+    for (key, _, _), w in zip(present, weights):
+        score += w * work[f"{key}__norm__"].fillna(0.5).to_numpy()
+    work["Score"] = score
 
-    df["Score"] = score
-    if "Year" in df.columns:
-        df["Grade"] = grade_by_year(df, "Score", year_col=year_col)
-    return dedupe_columns(df)
+    return work
 
-def safe_number(x, default=0.0):
-    try:
-        return float(x)
-    except Exception:
-        return default
-
-# -----------------------------------------------------------------------------
-# Data loading
-# -----------------------------------------------------------------------------
-@st.cache_data(show_spinner=True, ttl=60 * 10)
+# =============================================================================
+# LOAD EVERYTHING
+# =============================================================================
+@st.cache_data(show_spinner=True)
 def load_all():
-    wb = compute_scores(read_csv_from_github(FILES["world_bank"]))
+    wb = read_csv_local_or_raw(FILES["world_bank"])
+    sectors = read_csv_local_or_raw(FILES["sectors"])
+    dest = read_csv_local_or_raw(FILES["destinations"])
+    capex = read_excel_local_or_raw(FILES["capex_eda"])  # sheet 0
 
-    sectors = read_csv_from_github(FILES["sectors"])
-    dest = read_csv_from_github(FILES["destinations"])
+    # Harmonize
+    wb = harmonize_columns(wb)
+    sectors = harmonize_columns(sectors)
+    dest = harmonize_columns(dest)
+    capex = harmonize_columns(capex)
 
-    capex = read_excel_from_github(FILES["capex_eda"])  # sheet 0
-    # Harmonize expected cols for CAPEX view
-    for cand in ["year", "Year ", "YEAR"]:
-        if cand in capex.columns and "Year" not in capex.columns:
-            capex.rename(columns={cand: "Year"}, inplace=True)
-    for cand in ["capex", "CAPEX", "Capex", "Capex ($B)", "CAPEX ($B)"]:
-        if cand in capex.columns and "CAPEX" not in capex.columns:
-            capex.rename(columns={cand: "CAPEX"}, inplace=True)
+    # Light column fixes for CAPEX (expect at least Year + CAPEX)
+    if "Year" not in capex.columns:
+        for alt in ["year", "YEAR", "Year "]:
+            if alt in capex.columns:
+                capex.rename(columns={alt: "Year"}, inplace=True)
+                break
+    if "CAPEX" not in capex.columns:
+        for alt in ["capex", "Capex", "CAPEX ($B)", "Capex ($B)"]:
+            if alt in capex.columns:
+                capex.rename(columns={alt: "CAPEX"}, inplace=True)
+                break
 
-    return dedupe_columns(wb), dedupe_columns(sectors), dedupe_columns(dest), dedupe_columns(capex)
+    # Add Score & Grade if missing
+    wb = compute_score_if_missing(wb, INDICATOR_WEIGHTS, year_col="Year")
+    if "Grade" not in wb.columns:
+        wb["Grade"] = grade_by_year(wb, "Score", "Year")
 
-# -----------------------------------------------------------------------------
-# Charts
-# -----------------------------------------------------------------------------
-def world_map(df, year, score_col="Score", country_col="Country"):
-    d = df[df["Year"] == year].dropna(subset=[score_col, country_col]).copy()
+    return wb, sectors, dest, capex
+
+# =============================================================================
+# CHARTS
+# =============================================================================
+def world_map(df: pd.DataFrame, year: int):
+    if "Country" not in df.columns or "Score" not in df.columns or "Year" not in df.columns:
+        st.info("Cannot render map (missing Country/Score/Year).")
+        return
+    d = df[df["Year"] == year].dropna(subset=["Country", "Score"]).copy()
     if d.empty:
         st.info("No data for selected year.")
         return
     fig = px.choropleth(
         d,
-        locations=country_col,
+        locations="Country",
         locationmode="country names",
-        color=score_col,
-        hover_name=country_col,
+        color="Score",
+        hover_name="Country",
         color_continuous_scale="Viridis",
         title=f"Country Viability Score — {year}",
     )
+    fig.update_layout(margin=dict(l=0, r=0, t=50, b=0), height=520)
     st.plotly_chart(fig, use_container_width=True)
 
-def grade_distribution(df, year):
+def grade_distribution(df: pd.DataFrame, year: int):
+    if "Grade" not in df.columns or "Year" not in df.columns:
+        st.info("Cannot render grade distribution (missing Grade/Year).")
+        return
     d = df[df["Year"] == year]
-    if d.empty or "Grade" not in d.columns:
-        st.info("No grade data for selected year.")
+    if d.empty:
+        st.info("No data for selected year.")
         return
     counts = d["Grade"].value_counts().reindex(["A+","A","B","C","D"]).fillna(0)
-    fig = go.Figure(data=[go.Bar(x=counts.index, y=counts.values)])
+    fig = go.Figure([go.Bar(x=counts.index, y=counts.values)])
     fig.update_layout(title=f"Grade distribution — {year}", xaxis_title="Grade", yaxis_title="# Countries")
     st.plotly_chart(fig, use_container_width=True)
 
-def capex_line(capex_df):
+def capex_line(capex_df: pd.DataFrame):
     if not {"Year","CAPEX"}.issubset(capex_df.columns):
-        st.info("CAPEX sheet needs at least columns: Year, CAPEX.")
+        st.info("CAPEX sheet needs columns: Year, CAPEX.")
         st.dataframe(capex_df.head(10))
         return
     fig = px.line(capex_df.sort_values("Year"), x="Year", y="CAPEX", markers=True, title="Global CAPEX")
     st.plotly_chart(fig, use_container_width=True)
 
 def simple_arima_forecast(series: pd.Series, horizon=5):
-    s = series.dropna().astype(float)
-    s.index = pd.Index(range(len(s)))  # 0..N-1
+    if not ARIMA_AVAILABLE:
+        return None
+    s = pd.to_numeric(series, errors="coerce").dropna()
     if len(s) < 6:
         return None
     try:
+        s.index = pd.RangeIndex(len(s))  # ensure 0..N-1
         model = ARIMA(s, order=(1,1,1))
         res = model.fit()
         f = res.get_forecast(steps=horizon)
         fc = f.predicted_mean
         ci = f.conf_int()
-        lo, hi = ci.iloc[:,0], ci.iloc[:,1]
+        lo, hi = ci.iloc[:, 0], ci.iloc[:, 1]
         return fc, lo, hi
     except Exception:
         return None
 
-def capex_forecast_plot(capex_df, horizon=5):
+def capex_forecast_plot(capex_df: pd.DataFrame, horizon=5):
     if not {"Year","CAPEX"}.issubset(capex_df.columns):
         return
-    series = capex_df.sort_values("Year")["CAPEX"]
-    out = simple_arima_forecast(series, horizon=horizon)
+    out = simple_arima_forecast(capex_df.sort_values("Year")["CAPEX"], horizon=horizon)
     if out is None:
-        st.info("Not enough CAPEX points (or ARIMA failed) to forecast.")
+        st.info("Forecast unavailable (statsmodels not installed or insufficient data).")
         return
     fc, lo, hi = out
     base = capex_df.sort_values("Year")
     last_year = int(base["Year"].max())
-    future_years = [last_year + i for i in range(1, horizon+1)]
+    future_years = [last_year + i for i in range(1, horizon + 1)]
 
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=base["Year"], y=base["CAPEX"], mode="lines+markers", name="Actual"))
     fig.add_trace(go.Scatter(x=future_years, y=fc, mode="lines+markers", name="Forecast"))
     fig.add_trace(go.Scatter(x=future_years, y=lo, mode="lines", name="Lower", line=dict(dash="dash")))
     fig.add_trace(go.Scatter(x=future_years, y=hi, mode="lines", name="Upper", line=dict(dash="dash")))
-    fig.update_layout(title="CAPEX Forecast (ARIMA)", xaxis_title="Year", yaxis_title="CAPEX")
+    fig.update_layout(title="CAPEX Forecast (ARIMA 1,1,1)", xaxis_title="Year", yaxis_title="CAPEX")
     st.plotly_chart(fig, use_container_width=True)
 
-# -----------------------------------------------------------------------------
+# =============================================================================
 # UI
-# -----------------------------------------------------------------------------
+# =============================================================================
 st.set_page_config(page_title="FDI Analytics Dashboard", layout="wide")
 
-st.sidebar.title("Data Sources (GitHub)")
-st.sidebar.write("Using raw GitHub URLs — no uploads needed.")
-st.sidebar.code("\n".join(f"{k}: {raw_url(v)}" for k, v in FILES.items()), language="bash")
+st.sidebar.title("Data status")
+for k, v in FILES.items():
+    local_path = _compose_local_path(v)
+    if os.path.exists(local_path):
+        st.sidebar.success(f"{k}: found locally at `{os.path.basename(local_path)}`")
+    else:
+        if RAW_BASE:
+            st.sidebar.warning(f"{k}: using RAW fallback")
+        else:
+            st.sidebar.error(f"{k}: NOT FOUND and no RAW_BASE set")
 
-with st.sidebar.expander("Settings", expanded=False):
-    RAW_BASE = st.text_input("GitHub RAW base URL", RAW_BASE, help="Save & rerun after editing.")
-    display_year = st.text_input("Default Year (fallback to latest in data)", "")
-    try:
-        DEFAULT_YEAR = int(display_year) if display_year.strip() else None
-    except Exception:
-        DEFAULT_YEAR = None
-
-wb, sectors, dest, capex = load_all()
-years = sorted([int(y) for y in wb["Year"].dropna().unique()]) if "Year" in wb.columns else []
-default_year = DEFAULT_YEAR or (years[-1] if years else 2024)
+with st.sidebar.expander("RAW fallback (optional)"):
+    st.write("Set `RAW_BASE` in secrets to fetch files if they are not local:")
+    st.code('RAW_BASE="https://raw.githubusercontent.com/<user>/<repo>/<branch>"', language="toml")
 
 st.title("FDI Analytics Dashboard")
 st.caption("EDA • Viability Scoring • Forecasting • Comparisons • Sectors")
 
-# --- Filters
+# Load all data
+wb, sectors, dest, capex = load_all()
+
+# Years list
+years = sorted([int(y) for y in pd.to_numeric(wb.get("Year"), errors="coerce").dropna().unique()]) if "Year" in wb.columns else []
+default_year = years[-1] if years else None
+
+# Filters
 col1, col2, col3 = st.columns([1,1,2])
 with col1:
-    year_sel = st.selectbox("Year", years, index=max(0, years.index(default_year)) if years else 0)
+    year_sel = st.selectbox("Year", years, index=(len(years)-1) if years else 0, disabled=not years)
 with col2:
-    continents = ["All"] + sorted(wb.get("Continent", pd.Series([], dtype=str)).dropna().unique().tolist()) \
-        if "Continent" in wb.columns else ["All"]
+    continents = ["All"] + sorted(wb["Continent"].dropna().unique()) if "Continent" in wb.columns else ["All"]
     cont_sel = st.selectbox("Continent", continents, index=0)
 with col3:
-    q = st.text_input("Search country (optional)")
+    query = st.text_input("Search country (optional)")
 
-# Apply filters
+# Apply filters to a working copy
 wb_f = wb.copy()
 if cont_sel != "All" and "Continent" in wb_f.columns:
     wb_f = wb_f[wb_f["Continent"] == cont_sel]
-if q.strip() and "Country" in wb_f.columns:
-    wb_f = wb_f[wb_f["Country"].str.contains(q.strip(), case=False, na=False)]
+if query.strip() and "Country" in wb_f.columns:
+    wb_f = wb_f[wb_f["Country"].str.contains(query.strip(), case=False, na=False)]
 
 tabs = st.tabs(["Overview", "EDA", "Scoring", "Forecasting", "Compare", "Sectors"])
 
@@ -336,91 +380,96 @@ with tabs[0]:
     with c2:
         st.metric("Years", f"{len(years)}")
     with c3:
-        med_score = wb[wb["Year"] == year_sel]["Score"].median() if {"Year","Score"}.issubset(wb.columns) else float("nan")
-        st.metric("Median Score", f"{med_score:.2f}" if not math.isnan(med_score) else "—")
-    with c4:
-        if {"Year","Grade"}.issubset(wb.columns):
-            sl = wb[wb["Year"] == year_sel]["Grade"]
-            top_a = int((sl == "A").sum() + (sl == "A+").sum())
+        if years and "Score" in wb.columns and "Year" in wb.columns:
+            med_score = wb.loc[wb["Year"] == year_sel, "Score"].median()
+            st.metric("Median Score", f"{med_score:.2f}" if pd.notna(med_score) else "—")
         else:
-            top_a = 0
-        st.metric("A / A+ Countries", f"{top_a}")
+            st.metric("Median Score", "—")
+    with c4:
+        if years and "Grade" in wb.columns and "Year" in wb.columns:
+            g = wb.loc[wb["Year"] == year_sel, "Grade"]
+            top_a = (g == "A").sum() + (g == "A+").sum()
+            st.metric("A / A+ Countries", f"{int(top_a)}")
+        else:
+            st.metric("A / A+ Countries", "—")
 
-    st.subheader("CAPEX Trend")
+    st.subheader("Global CAPEX Trend")
     capex_line(capex)
 
     st.subheader("World Map — Viability Score")
-    if {"Country","Year","Score"}.issubset(wb_f.columns):
+    if years:
         world_map(wb_f, year_sel)
     else:
-        st.info("Missing Country/Year/Score columns to draw the map.")
+        st.info("No Year column found in the world bank dataset.")
 
     c5, c6 = st.columns([2,1])
     with c5:
         st.subheader("Top Countries (sample)")
-        if {"Year","Score","Country"}.issubset(wb_f.columns):
-            view_cols = ["Country", "Score", "Grade"] if "Grade" in wb_f.columns else ["Country", "Score"]
-            tmp = wb_f[wb_f["Year"] == year_sel].sort_values("Score", ascending=False)[view_cols].head(20)
+        if years and "Score" in wb_f.columns and "Year" in wb_f.columns:
+            cols_show = ["Country", "Score", "Grade"]
+            if "CAPEX" in wb_f.columns:  # optional
+                cols_show.append("CAPEX")
+            tmp = wb_f[wb_f["Year"] == year_sel].sort_values(["Score"], ascending=False)[cols_show].head(20)
             st.dataframe(tmp, use_container_width=True)
         else:
-            st.info("Score/Country/Year not present.")
+            st.info("Missing Year/Score for top table.")
     with c6:
         st.subheader("Grade Distribution")
-        if {"Year","Grade"}.issubset(wb_f.columns):
+        if years:
             grade_distribution(wb_f, year_sel)
         else:
-            st.info("No Grade column to summarize.")
+            st.info("No Year column to compute distribution.")
 
 # ---------------- EDA ----------------
 with tabs[1]:
-    st.subheader("Sector CAPEX breakdown (from merged_sectors_data.csv)")
-    if not sectors.empty:
-        if "Year" not in sectors.columns:
-            for alt in ["year","YEAR"]:
-                if alt in sectors.columns:
-                    sectors.rename(columns={alt:"Year"}, inplace=True)
-        if "Sector" not in sectors.columns:
-            for alt in ["sector","SECTOR","Industry"]:
-                if alt in sectors.columns:
-                    sectors.rename(columns={alt:"Sector"}, inplace=True)
-        value_col = next((c for c in ["CAPEX","Capex","Value","Share","Amount"] if c in sectors.columns), None)
-        if value_col and {"Year","Sector"}.issubset(sectors.columns):
-            s = sectors[sectors["Year"] == year_sel]
-            fig = px.pie(s, names="Sector", values=value_col, title=f"Sectors — {year_sel}")
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.dataframe(sectors.head(20), use_container_width=True)
+    st.subheader("Sector CAPEX breakdown (merged_sectors_data.csv)")
+    sec = sectors.copy()
+    # Harmonize common fields
+    if "Year" not in sec.columns:
+        for alt in ["year", "YEAR"]:
+            if alt in sec.columns:
+                sec.rename(columns={alt: "Year"}, inplace=True)
+                break
+    if "Sector" not in sec.columns:
+        for alt in ["sector", "SECTOR", "Industry"]:
+            if alt in sec.columns:
+                sec.rename(columns={alt: "Sector"}, inplace=True)
+                break
+    # pick a numeric value column
+    value_col = None
+    for cand in ["CAPEX","Capex","Value","Share","Amount","capex_usd_b","capex_busd","capex"]:
+        if cand in sec.columns:
+            value_col = cand
+            break
+    if {"Year","Sector"}.issubset(sec.columns) and value_col:
+        s = sec[sec["Year"] == year_sel] if years else sec
+        fig = px.pie(s, names="Sector", values=value_col, title=f"Sectors — {year_sel}" if years else "Sectors")
+        st.plotly_chart(fig, use_container_width=True)
     else:
-        st.info("No sectors data available.")
+        st.info("Expected columns in sectors: Year, Sector, and a numeric value column like CAPEX.")
+        st.dataframe(sec.head(25), use_container_width=True)
 
     st.divider()
-    st.subheader("Destination patterns (from merged_destinations_data.csv)")
+    st.subheader("Destination patterns (merged_destinations_data.csv)")
     st.dataframe(dest.head(25), use_container_width=True)
 
 # ---------------- Scoring ----------------
 with tabs[2]:
-    st.subheader("Indicator Weights")
+    st.subheader("Indicator Weights (used if Score missing)")
     rows = []
     for k, meta in INDICATOR_WEIGHTS.items():
         w = meta["weight"] if isinstance(meta, dict) else meta
         direction = meta.get("direction", "positive") if isinstance(meta, dict) else "positive"
-        rows.append({
-            "Indicator": k,
-            "Weight %": w,
-            "Direction": "+" if direction=="positive" else "-",
-            "Column present": k in wb.columns
-        })
+        rows.append({"Indicator": k, "Weight %": w, "Direction": "+" if direction=="positive" else "-", "Present": k in wb.columns})
     st.dataframe(pd.DataFrame(rows).sort_values("Weight %", ascending=False), use_container_width=True)
 
     st.divider()
-    st.subheader(f"Country scores — {year_sel}")
-    # Build the desired columns, then drop non-existing and duplicates safely
-    desired = ["Country","Score","Grade"]
-    flat_indicators = sum(CATEGORY_BREAKDOWN.values(), [])
-    desired += [c for c in flat_indicators if c in wb.columns]
-    show_cols = [c for c in unique(desired) if c in wb.columns]
-    subset = wb_f[wb_f["Year"] == year_sel] if "Year" in wb_f.columns else wb_f
-    st.dataframe(subset[show_cols].sort_values("Score", ascending=False), use_container_width=True)
+    st.subheader(f"Country scores — {year_sel}" if years else "Country scores")
+    cols_to_show = ["Country", "Score", "Grade"]
+    extra_inds = [c for c in INDICATOR_WEIGHTS.keys() if c in wb.columns]
+    cols_to_show += extra_inds
+    df_scores = wb_f[wb_f["Year"] == year_sel][cols_to_show].sort_values("Score", ascending=False) if years else wb_f[cols_to_show]
+    st.dataframe(df_scores, use_container_width=True)
 
 # ---------------- Forecasting ----------------
 with tabs[3]:
@@ -430,44 +479,50 @@ with tabs[3]:
 # ---------------- Compare ----------------
 with tabs[4]:
     st.subheader("Compare two countries")
-    countries = sorted(wb_f["Country"].dropna().unique().tolist()) if "Country" in wb_f.columns else []
-    c1, c2, c3 = st.columns(3)
-    with c1:
-        a = st.selectbox("Country A", countries, index=0 if countries else None)
-    with c2:
-        b = st.selectbox("Country B", countries, index=1 if len(countries) > 1 else (0 if countries else None))
-    with c3:
-        metric = st.selectbox("Metric", [
-            "Score","Grade","GDP growth (annual %)","Inflation, consumer prices (annual %)",
-            "GDP per capita, PPP (current international $)"
-        ])
-    if countries and {"Year","Country"}.issubset(wb_f.columns):
-        d = wb_f[(wb_f["Country"].isin([a,b])) & (wb_f["Year"]==year_sel)].copy()
-        if metric == "Grade":
-            show_cols = unique([c for c in ["Country","Grade"] if c in d.columns])
-        else:
-            show_cols = unique([c for c in ["Country", metric, "Score", "Grade"] if c in d.columns])
-        st.dataframe(d[show_cols], use_container_width=True)
+    if "Country" in wb_f.columns:
+        countries = sorted(wb_f["Country"].dropna().unique().tolist())
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            country_a = st.selectbox("Country A", countries, index=0 if countries else None)
+        with c2:
+            country_b = st.selectbox("Country B", countries, index=1 if len(countries) > 1 else (0 if countries else None))
+        with c3:
+            metric = st.selectbox("Metric", ["Score","Grade","GDP growth (annual %)","Inflation, consumer prices (annual %)","GDP per capita, PPP (current international $)"])
+        if countries:
+            if years:
+                d = wb_f[(wb_f["Country"].isin([country_a, country_b])) & (wb_f["Year"] == year_sel)]
+            else:
+                d = wb_f[wb_f["Country"].isin([country_a, country_b])]
+            if metric == "Grade":
+                st.dataframe(d[["Country","Grade"]], use_container_width=True)
+            else:
+                cols = [c for c in [metric, "Score", "Grade"] if c in d.columns]
+                st.dataframe(d[["Country"] + cols], use_container_width=True)
     else:
-        st.info("Country/Year columns not found.")
+        st.info("No Country column to compare.")
 
 # ---------------- Sectors ----------------
 with tabs[5]:
-    st.subheader("Sector trends (toy line — replace with your preferred view)")
-    if not sectors.empty:
-        value_col = next((c for c in ["CAPEX","Capex","Value","Share","Amount"] if c in sectors.columns), None)
-        if value_col and {"Sector","Year"}.issubset(sectors.columns):
-            top = (
-                sectors.groupby("Sector")[value_col]
-                .mean()
-                .sort_values(ascending=False)
-                .head(5)
-                .index.tolist()
-            )
-            s = sectors[sectors["Sector"].isin(top)]
-            fig = px.line(s, x="Year", y=value_col, color="Sector", markers=True)
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.info("No numeric sector value column found.")
+    st.subheader("Sector trends (top lines)")
+    sec = sectors.copy()
+    if "Year" not in sec.columns:
+        for alt in ["year", "YEAR"]:
+            if alt in sec.columns:
+                sec.rename(columns={alt: "Year"}, inplace=True)
+                break
+    if "Sector" not in sec.columns:
+        for alt in ["sector", "SECTOR", "Industry"]:
+            if alt in sec.columns:
+                sec.rename(columns={alt: "Sector"}, inplace=True)
+                break
+    value_col = None
+    for cand in ["CAPEX","Capex","Value","Share","Amount","capex_usd_b","capex_busd","capex"]:
+        if cand in sec.columns:
+            value_col = cand; break
+    if {"Year","Sector"}.issubset(sec.columns) and value_col:
+        top = sec.groupby("Sector")[value_col].mean(numeric_only=True).sort_values(ascending=False).head(5).index.tolist()
+        s = sec[sec["Sector"].isin(top)]
+        fig = px.line(s, x="Year", y=value_col, color="Sector", markers=True, title="Top sectors over time")
+        st.plotly_chart(fig, use_container_width=True)
     else:
-        st.info("No sectors data loaded.")
+        st.info("No numeric sector value column found or missing Year/Sector.")
