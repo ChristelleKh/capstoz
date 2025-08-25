@@ -1,0 +1,1088 @@
+Destination Country,Projects,Capex,Avg_Capex,Jobs_Created,Avg_Jobs,Companies,Unused,Source_Country
+United States,634,"54,742.4",86.3,"64,071",101,458,,Canada
+United Kingdom,128,"7,986.7",62.4,"9,647",75,101,,Canada
+France,100,"4,533.5",45.3,"8,993",89,63,,Canada
+UAE,76,626.0,8.2,"2,904",38,72,,Canada
+Mexico,66,"5,534.2",83.9,"17,530",265,47,,Canada
+India,65,"1,907.2",29.3,"21,320",328,49,,Canada
+Germany,61,"1,164.2",19.1,"2,595",42,53,,Canada
+Australia,54,"24,981.0",462.6,"10,179",188,41,,Canada
+China,38,"3,961.3",104.2,"8,139",214,31,,Canada
+Ireland,32,624.4,19.5,"2,971",92,24,,Canada
+Netherlands,28,666.6,23.8,"1,397",49,26,,Canada
+Spain,28,"1,372.0",49.0,"1,749",62,21,,Canada
+Colombia,26,"1,604.4",61.7,"2,938",113,12,,Canada
+Singapore,26,360.3,13.9,671,25,26,,Canada
+Brazil,22,"2,181.6",99.2,"1,755",79,13,,Canada
+Japan,19,890.2,46.9,816,42,16,,Canada
+Belgium,15,115.5,7.7,475,31,15,,Canada
+South Africa,15,760.9,50.7,"1,386",92,14,,Canada
+Chile,13,"2,109.8",162.3,"2,073",159,11,,Canada
+Saudi Arabia,13,120.6,9.3,714,54,12,,Canada
+Poland,12,131.5,11.0,779,64,11,,Canada
+South Korea,12,518.4,43.2,"1,074",89,10,,Canada
+Costa Rica,11,36.7,3.3,"1,995",181,7,,Canada
+Taiwan,11,"1,449.0",131.7,839,76,8,,Canada
+Vietnam,11,140.0,12.7,896,81,11,,Canada
+Hong Kong,10,302.9,30.3,"1,914",191,9,,Canada
+Italy,10,"1,621.1",162.1,742,74,8,,Canada
+Malaysia,10,142.4,14.2,"1,471",147,9,,Canada
+Qatar,10,71.8,7.2,364,36,10,,Canada
+Romania,10,"1,634.1",163.4,"3,615",361,10,,Canada
+Turkey,10,142.4,14.2,282,28,9,,Canada
+Austria,9,182.0,20.2,704,78,8,,Canada
+Portugal,9,263.4,29.3,812,90,8,,Canada
+Democratic Republic of Congo,8,"5,577.4",697.2,"6,085",760,6,,Canada
+Egypt,8,"4,553.3",569.2,"2,411",301,8,,Canada
+Morocco,8,152.4,19.1,598,74,8,,Canada
+Philippines,8,106.3,13.3,"1,843",230,8,,Canada
+Switzerland,8,76.2,9.5,198,24,8,,Canada
+New Zealand,7,817.6,116.8,553,79,4,,Canada
+Denmark,6,374.5,62.4,203,33,6,,Canada
+Ecuador,6,799.3,133.2,980,163,4,,Canada
+Finland,6,98.0,16.3,104,17,6,,Canada
+Hungary,6,125.7,20.9,539,89,6,,Canada
+Argentina,5,"1,407.7",281.5,"1,143",228,5,,Canada
+Israel,5,94.4,18.9,445,89,5,,Canada
+Nigeria,5,440.5,88.1,814,162,5,,Canada
+Norway,5,35.2,7.0,135,27,5,,Canada
+Ukraine,5,162.3,32.5,404,80,5,,Canada
+Ghana,4,353.3,88.3,"2,313",578,2,,Canada
+Pakistan,4,36.7,9.2,326,81,3,,Canada
+Croatia,3,441.8,147.3,375,125,3,,Canada
+Czech Republic,3,90.4,30.1,888,296,3,,Canada
+Kazakhstan,3,264.3,88.1,483,161,3,,Canada
+Kenya,3,29.1,9.7,116,38,2,,Canada
+Peru,3,33.9,11.3,159,53,3,,Canada
+Sweden,3,366.6,122.2,165,55,1,,Canada
+Thailand,3,99.5,33.2,694,231,3,,Canada
+Zambia,3,"1,550.0",516.7,"2,311",770,1,,Canada
+Bahrain,2,6.4,3.2,67,33,2,,Canada
+Bulgaria,2,30.2,15.1,108,54,2,,Canada
+Cote d Ivoire,2,593.9,296.9,976,488,2,,Canada
+Greece,2,335.0,167.5,506,253,2,,Canada
+Indonesia,2,35.2,17.6,70,35,1,,Canada
+Jamaica,2,33.0,16.5,"1,292",646,2,,Canada
+Luxembourg,2,24.9,12.4,85,42,2,,Canada
+Malawi,2,596.1,298.1,774,387,1,,Canada
+Mauritius,2,72.6,36.3,345,172,2,,Canada
+Namibia,2,616.8,308.4,"1,434",717,2,,Canada
+North Macedonia,2,64.1,32.0,900,450,1,,Canada
+Oman,2,69.8,34.9,88,44,2,,Canada
+Serbia,2,74.1,37.0,962,481,2,,Canada
+Sri Lanka,2,10.7,5.3,440,220,2,,Canada
+Trinidad & Tobago,2,4.9,2.5,200,100,2,,Canada
+Albania,1,27.8,27.8,143,143,1,,Canada
+Bahamas,1,32.5,32.5,36,36,1,,Canada
+Bangladesh,1,9.0,9.0,426,426,1,,Canada
+Barbados,1,.5,0.5,6,6,1,,Canada
+Cambodia,1,12.3,12.3,133,133,1,,Canada
+Dominican Republic,1,106.9,106.9,600,600,1,,Canada
+El Salvador,1,29.2,29.2,378,378,1,,Canada
+Estonia,1,104.3,104.3,389,389,1,,Canada
+Ethiopia,1,420.4,420.4,717,717,1,,Canada
+Guinea,1,9.5,9.5,26,26,1,,Canada
+Honduras,1,22.0,22.0,250,250,1,,Canada
+Kuwait,1,3.0,3.0,17,17,1,,Canada
+Liberia,1,9.5,9.5,26,26,1,,Canada
+Liechtenstein,1,13.3,13.3,26,26,1,,Canada
+Lithuania,1,12.7,12.7,39,39,1,,Canada
+Macau,1,43.5,43.5,237,237,1,,Canada
+Mauritania,1,55.0,55.0,16,16,1,,Canada
+Moldova,1,2.5,2.5,45,45,1,,Canada
+Monaco,1,13.3,13.3,26,26,1,,Canada
+Panama,1,163.0,163.0,"1,200","1,200",1,,Canada
+Paraguay,1,144.5,144.5,135,135,1,,Canada
+Russia,1,22.8,22.8,370,370,1,,Canada
+Rwanda,1,27.8,27.8,23,23,1,,Canada
+Sierra Leone,1,9.5,9.5,26,26,1,,Canada
+Slovakia,1,13.0,13.0,100,100,1,,Canada
+Uganda,1,42.0,42.0,142,142,1,,Canada
+Uruguay,1,32.5,32.5,36,36,1,,Canada
+Yemen,1,1.7,1.7,39,39,1,,Canada
+Total,"1,780","144,916.7",81.4,"215,949",121,"1,028",,Canada
+Germany,312,"6,262.9",20.1,"10,691",34,284,,China
+United States,232,"23,463.6",101.1,"41,076",177,180,,China
+Mexico,112,"17,025.8",152.0,"81,723",729,90,,China
+UAE,102,"2,384.4",23.4,"7,010",68,92,,China
+Vietnam,100,"19,206.2",192.1,"197,504","1,975",88,,China
+Spain,85,"12,640.7",148.7,"17,145",201,63,,China
+United Kingdom,75,"2,363.5",31.5,"5,649",75,64,,China
+Singapore,72,"5,601.3",77.8,"11,257",156,69,,China
+Malaysia,70,"34,967.3",499.5,"35,543",507,62,,China
+France,68,"2,446.4",36.0,"4,248",62,65,,China
+Thailand,67,"5,941.7",88.7,"39,043",582,62,,China
+Indonesia,62,"18,650.8",300.8,"44,589",719,58,,China
+Hong Kong,54,"2,432.0",45.0,"4,744",87,51,,China
+Saudi Arabia,54,"23,472.6",434.7,"22,095",409,41,,China
+Brazil,53,"10,426.1",196.7,"19,659",370,40,,China
+Turkey,46,"8,273.8",179.9,"28,269",614,37,,China
+Uzbekistan,40,"5,582.9",139.6,"6,988",174,28,,China
+Cambodia,38,"3,654.5",96.2,"27,690",728,35,,China
+Japan,38,"1,649.5",43.4,"4,220",111,36,,China
+Egypt,34,"13,361.2",393.0,"32,398",952,31,,China
+India,34,"2,300.0",67.6,"24,823",730,30,,China
+Canada,32,651.4,20.4,"2,101",65,31,,China
+Hungary,29,"12,704.2",438.1,"13,419",462,26,,China
+South Korea,29,"5,956.7",205.4,"17,271",595,27,,China
+Belgium,27,"1,444.1",53.5,"2,252",83,25,,China
+Poland,27,773.8,28.7,"4,712",174,25,,China
+Australia,26,"2,830.6",108.9,"1,172",45,23,,China
+Netherlands,24,416.3,17.3,"1,072",44,24,,China
+Serbia,24,"8,089.8",337.1,"11,484",478,15,,China
+Argentina,19,"10,764.7",566.6,"15,018",790,12,,China
+Italy,19,386.4,20.3,"1,000",52,19,,China
+Kazakhstan,19,"11,387.4",599.3,"8,560",450,17,,China
+Pakistan,19,"2,351.7",123.8,"8,794",462,14,,China
+Chile,16,"1,319.4",82.5,"2,225",139,13,,China
+Philippines,16,"1,660.7",103.8,"6,480",405,15,,China
+Morocco,15,"12,300.4",820.0,"21,266","1,417",13,,China
+Romania,15,366.9,24.5,"2,656",177,13,,China
+South Africa,15,320.5,21.4,"1,360",90,14,,China
+Bangladesh,14,"1,197.6",85.5,"24,972","1,783",14,,China
+Sweden,14,"3,360.3",240.0,"5,595",399,11,,China
+Ireland,13,788.9,60.7,"1,714",131,5,,China
+Colombia,12,290.2,24.2,"1,112",92,12,,China
+Zimbabwe,11,"1,798.8",163.5,"7,905",718,8,,China
+Kenya,10,321.3,32.1,"1,346",134,10,,China
+Switzerland,10,185.0,18.5,398,39,10,,China
+Denmark,9,467.4,51.9,337,37,8,,China
+Finland,9,"1,467.1",163.0,"1,167",129,9,,China
+Russia,9,"1,022.9",113.7,"2,094",232,8,,China
+Czech Republic,8,67.3,8.4,377,47,5,,China
+Kyrgyzstan,8,"1,963.3",245.4,"3,521",440,7,,China
+Nigeria,8,"1,054.2",131.8,"2,982",372,7,,China
+Oman,7,906.1,129.4,"2,079",297,6,,China
+Portugal,7,295.1,42.2,950,135,7,,China
+Qatar,7,394.6,56.4,763,109,7,,China
+Slovakia,7,"3,821.4",545.9,"8,125","1,160",7,,China
+Laos,6,"1,022.0",170.3,"1,674",279,5,,China
+Slovenia,5,128.2,25.6,533,106,4,,China
+Tanzania,5,246.2,49.2,"1,239",247,5,,China
+Bulgaria,4,76.9,19.2,824,206,4,,China
+Nepal,4,"1,207.9",302.0,84,21,2,,China
+Norway,4,896.3,224.1,597,149,4,,China
+Algeria,3,124.5,41.5,850,283,3,,China
+Angola,3,"1,183.4",394.5,"2,482",827,3,,China
+Belarus,3,297.3,99.1,"1,352",450,3,,China
+Bolivia,3,"1,800.0",600.0,"2,315",771,2,,China
+Costa Rica,3,4.4,1.5,83,27,3,,China
+Estonia,3,146.5,48.8,302,100,3,,China
+Ethiopia,3,"2,280.8",760.3,"5,546","1,848",3,,China
+Honduras,3,"1,559.9",520.0,"5,241","1,747",1,,China
+Israel,3,167.4,55.8,669,223,2,,China
+Macau,3,133.4,44.5,336,112,3,,China
+Myanmar,3,43.2,14.4,"1,182",394,3,,China
+Panama,3,99.5,33.2,394,131,3,,China
+Peru,3,275.1,91.7,443,147,3,,China
+Taiwan,3,167.0,55.7,144,48,3,,China
+Uganda,3,"1,317.7",439.2,"3,302","1,100",3,,China
+Afghanistan,2,"1,715.7",857.9,626,313,1,,China
+Albania,2,119.6,59.8,230,115,1,,China
+Azerbaijan,2,293.0,146.5,"1,195",597,2,,China
+Bahrain,2,178.3,89.2,230,115,2,,China
+Cameroon,2,113.4,56.7,928,464,1,,China
+Cote d Ivoire,2,36.4,18.2,291,145,2,,China
+Croatia,2,26.9,13.4,459,229,2,,China
+Ecuador,2,377.4,188.7,604,302,2,,China
+Ghana,2,9.4,4.7,124,62,1,,China
+Greece,2,2.3,1.1,18,9,2,,China
+Iraq,2,365.6,182.8,89,44,2,,China
+Mali,2,226.7,113.3,716,358,2,,China
+New Zealand,2,45.6,22.8,147,73,2,,China
+Rwanda,2,110.9,55.5,857,428,2,,China
+Sri Lanka,2,"4,512.3",2256.2,"1,650",825,2,,China
+Tajikistan,2,362.7,181.3,118,59,2,,China
+Uruguay,2,10.7,5.3,25,12,2,,China
+Zambia,2,44.3,22.1,640,320,2,,China
+Benin,1,177.9,177.9,102,102,1,,China
+Democratic Republic of Congo,1,473.1,473.1,717,717,1,,China
+Djibouti,1,621.3,621.3,610,610,1,,China
+El Salvador,1,43.3,43.3,151,151,1,,China
+Georgia,1,173.6,173.6,263,263,1,,China
+Guinea,1,100.3,100.3,202,202,1,,China
+Guyana,1,37.9,37.9,140,140,1,,China
+Kuwait,1,113.4,113.4,270,270,1,,China
+Liberia,1,420.4,420.4,717,717,1,,China
+Libya,1,83.2,83.2,400,400,1,,China
+Lithuania,1,8.1,8.1,100,100,1,,China
+Luxembourg,1,9.7,9.7,49,49,1,,China
+Malawi,1,27.8,27.8,23,23,1,,China
+Mozambique,1,200.0,200.0,600,600,1,,China
+Namibia,1,96.4,96.4,29,29,1,,China
+Niger,1,177.9,177.9,102,102,1,,China
+North Korea,1,12.3,12.3,133,133,1,,China
+Paraguay,1,144.5,144.5,135,135,1,,China
+Senegal,1,4.7,4.7,63,63,1,,China
+South Sudan,1,100.3,100.3,202,202,1,,China
+Trinidad & Tobago,1,22.8,22.8,551,551,1,,China
+Tunisia,1,100.3,100.3,202,202,1,,China
+Total,"2,413","340,112.1",140.9,"896,943",371,"1,346",,China
+United States,398,"20,435.0",51.3,"32,171",80,289,,France
+United Kingdom,312,"25,221.3",80.8,"23,230",74,212,,France
+Spain,305,"7,905.2",25.9,"21,430",70,214,,France
+Germany,262,"13,840.0",52.8,"13,801",52,217,,France
+UAE,143,"3,760.9",26.3,"6,941",48,133,,France
+India,132,"13,272.8",100.6,"128,081",970,82,,France
+Belgium,113,"2,260.1",20.0,"4,121",36,92,,France
+Poland,105,"5,873.5",55.9,"17,932",170,62,,France
+Canada,97,"3,800.2",39.2,"7,057",72,81,,France
+China,95,"6,957.1",73.2,"20,176",212,74,,France
+Italy,95,"5,763.4",60.7,"8,855",93,80,,France
+Singapore,80,"3,941.3",49.3,"5,194",64,74,,France
+Netherlands,66,"1,753.7",26.6,"3,900",59,56,,France
+Brazil,62,"18,310.7",295.3,"12,191",196,39,,France
+Mexico,62,"2,645.8",42.7,"13,550",218,49,,France
+Turkey,56,"2,391.7",42.7,"3,833",68,42,,France
+Portugal,55,"1,239.4",22.5,"5,385",97,48,,France
+Australia,54,"9,538.7",176.6,"4,173",77,41,,France
+Morocco,54,"4,852.1",89.9,"8,052",149,47,,France
+Switzerland,51,341.7,6.7,905,17,45,,France
+Ireland,43,"1,222.3",28.4,"2,748",63,25,,France
+Saudi Arabia,43,"3,132.3",72.8,"6,383",148,35,,France
+Romania,37,"1,579.0",42.7,"5,663",153,24,,France
+Japan,32,741.0,23.2,"1,552",48,32,,France
+South Africa,30,"2,518.1",83.9,"4,702",156,18,,France
+Egypt,26,"17,502.2",673.2,"14,596",561,21,,France
+Sweden,24,"1,014.0",42.3,"1,096",45,20,,France
+Finland,22,716.2,32.6,674,30,18,,France
+Vietnam,21,607.0,28.9,"3,867",184,20,,France
+South Korea,20,"1,686.1",84.3,"5,371",268,18,,France
+Cote d Ivoire,19,455.0,23.9,921,48,18,,France
+Nigeria,19,714.3,37.6,798,42,13,,France
+Hong Kong,18,244.0,13.6,635,35,17,,France
+Qatar,18,"3,551.6",197.3,"1,688",93,18,,France
+Thailand,18,962.0,53.4,"7,377",409,18,,France
+Slovakia,17,917.1,53.9,"1,734",102,10,,France
+Colombia,16,724.4,45.3,"4,925",307,13,,France
+Austria,15,133.3,8.9,649,43,15,,France
+Malaysia,15,791.7,52.8,"2,023",134,15,,France
+Chile,13,869.6,66.9,922,70,12,,France
+Denmark,13,521.0,40.1,655,50,10,,France
+Indonesia,13,664.0,51.1,961,73,12,,France
+Kenya,13,363.6,28.0,"1,100",84,12,,France
+Senegal,13,142.3,10.9,424,32,13,,France
+Tunisia,13,"3,719.0",286.1,"2,590",199,12,,France
+Hungary,12,285.1,23.8,"1,428",119,11,,France
+Israel,12,808.4,67.4,"1,072",89,11,,France
+Luxembourg,11,81.5,7.4,314,28,11,,France
+Taiwan,11,206.3,18.8,642,58,11,,France
+Kazakhstan,10,"1,786.8",178.7,"2,144",214,7,,France
+Philippines,10,602.8,60.3,851,85,8,,France
+Czech Republic,9,118.0,13.1,705,78,9,,France
+Argentina,7,957.3,136.8,"2,002",286,6,,France
+Bulgaria,7,243.0,34.7,"1,175",167,6,,France
+Croatia,7,116.1,16.6,556,79,5,,France
+Mauritius,7,179.9,25.7,490,70,4,,France
+Norway,7,"1,687.3",241.0,809,115,7,,France
+Ukraine,7,188.8,27.0,408,58,6,,France
+Uzbekistan,7,"1,091.2",155.9,809,115,5,,France
+Costa Rica,6,59.4,9.9,"1,774",295,5,,France
+Russia,6,"1,519.4",253.2,"1,644",274,6,,France
+Cambodia,5,328.9,65.8,721,144,5,,France
+Cameroon,5,124.3,24.9,566,113,4,,France
+New Zealand,5,98.2,19.6,407,81,5,,France
+Ghana,4,12.5,3.1,30,7,2,,France
+Greece,4,171.1,42.8,87,21,4,,France
+Lithuania,4,45.3,11.3,623,155,4,,France
+Angola,3,"6,050.0",2016.7,"2,214",738,3,,France
+Bahrain,3,8.6,2.9,83,27,3,,France
+Bangladesh,3,34.0,11.3,105,35,3,,France
+Democratic Republic of Congo,3,908.8,302.9,299,99,3,,France
+Ethiopia,3,60.5,20.2,163,54,3,,France
+Gabon,3,"2,374.2",791.4,416,138,2,,France
+Madagascar,3,224.0,74.7,107,35,3,,France
+Monaco,3,6.2,2.1,20,6,3,,France
+North Macedonia,3,382.3,127.4,165,55,3,,France
+Oman,3,365.1,121.7,94,31,3,,France
+Panama,3,101.2,33.7,590,196,3,,France
+Peru,3,169.3,56.4,640,213,3,,France
+Serbia,3,129.0,43.0,727,242,3,,France
+Uganda,3,"10,027.8",3342.6,"5,254","1,751",2,,France
+Bosnia-Herzegovina,2,91.6,45.8,520,260,2,,France
+Burkina Faso,2,95.4,47.7,43,21,2,,France
+El Salvador,2,14.2,7.1,"1,440",720,2,,France
+Estonia,2,373.4,186.7,120,60,1,,France
+Guatemala,2,48.7,24.4,"1,700",850,2,,France
+Guyana,2,14.3,7.2,"1,550",775,1,,France
+Tanzania,2,29.7,14.8,31,15,2,,France
+Togo,2,48.3,24.1,50,25,2,,France
+Albania,1,20.5,20.5,27,27,1,,France
+Benin,1,20.5,20.5,27,27,1,,France
+Botswana,1,27.8,27.8,23,23,1,,France
+Cyprus,1,15.5,15.5,100,100,1,,France
+Guinea,1,27.8,27.8,23,23,1,,France
+Laos,1,12.3,12.3,133,133,1,,France
+Latvia,1,53.9,53.9,276,276,1,,France
+Lebanon,1,1.2,1.2,18,18,1,,France
+Liberia,1,27.8,27.8,23,23,1,,France
+Malawi,1,175.7,175.7,57,57,1,,France
+Namibia,1,181.3,181.3,54,54,1,,France
+Rwanda,1,4.4,4.4,19,19,1,,France
+Sierra Leone,1,27.8,27.8,23,23,1,,France
+Sri Lanka,1,3.8,3.8,16,16,1,,France
+Suriname,1,3.6,3.6,478,478,1,,France
+Trinidad & Tobago,1,3.9,3.9,50,50,1,,France
+Zambia,1,1.9,1.9,8,8,1,,France
+Total,"3,366","232,473.5",69.1,"451,975",134,"1,563",,France
+United States,692,"42,524.2",61.5,"75,885",109,483,,Germany
+United Kingdom,373,"46,260.3",124.0,"41,522",111,233,,Germany
+Spain,334,"16,980.8",50.8,"30,759",92,212,,Germany
+France,293,"8,925.7",30.5,"20,425",69,208,,Germany
+India,265,"10,624.0",40.1,"92,917",350,192,,Germany
+China,248,"18,135.6",73.1,"49,092",197,191,,Germany
+Poland,244,"12,140.6",49.8,"55,312",226,168,,Germany
+Mexico,164,"11,735.3",71.6,"55,348",337,117,,Germany
+Turkey,149,"2,649.1",17.8,"12,476",83,130,,Germany
+UAE,122,"8,569.4",70.2,"7,989",65,113,,Germany
+Italy,112,"17,176.0",153.4,"8,372",74,85,,Germany
+Romania,102,"4,098.8",40.2,"19,771",193,84,,Germany
+Austria,97,"4,494.0",46.3,"5,928",61,85,,Germany
+Hungary,94,"5,056.1",53.8,"14,545",154,73,,Germany
+Singapore,87,"2,115.3",24.3,"7,632",87,86,,Germany
+Netherlands,82,"2,024.4",24.7,"4,167",50,76,,Germany
+Portugal,76,"1,825.0",24.0,"6,444",84,60,,Germany
+Denmark,75,"3,409.1",45.5,"2,401",32,68,,Germany
+Switzerland,72,574.6,8.0,"1,501",20,68,,Germany
+Czech Republic,70,"1,806.9",25.8,"9,945",142,57,,Germany
+Canada,68,"7,846.7",115.4,"6,976",102,59,,Germany
+Vietnam,63,"3,647.6",57.9,"13,105",208,53,,Germany
+Belgium,60,"1,925.2",32.1,"2,288",38,54,,Germany
+Bulgaria,57,"1,554.3",27.3,"6,700",117,44,,Germany
+Australia,56,"2,671.9",47.7,"3,192",57,46,,Germany
+Ireland,56,"1,888.5",33.7,"3,138",56,39,,Germany
+Brazil,52,"2,096.6",40.3,"5,574",107,44,,Germany
+South Africa,50,"4,141.7",82.8,"5,287",105,45,,Germany
+Sweden,46,905.0,19.7,"2,282",49,45,,Germany
+Japan,44,"1,625.1",36.9,"3,764",85,34,,Germany
+Malaysia,43,"9,192.5",213.8,"8,176",190,38,,Germany
+Slovakia,42,"2,763.6",65.8,"11,315",269,33,,Germany
+Costa Rica,39,804.1,20.6,"5,511",141,17,,Germany
+Thailand,35,932.2,26.6,"2,735",78,32,,Germany
+Finland,33,"1,026.7",31.1,"1,314",39,30,,Germany
+Saudi Arabia,33,556.9,16.9,"1,617",49,31,,Germany
+Taiwan,33,"2,207.8",66.9,"2,768",83,23,,Germany
+Serbia,28,"2,432.2",86.9,"7,529",268,27,,Germany
+Lithuania,27,595.7,22.1,"1,389",51,20,,Germany
+Argentina,26,737.7,28.4,"3,507",134,19,,Germany
+Greece,26,"1,168.7",45.0,"1,115",42,23,,Germany
+South Korea,26,933.4,35.9,"3,267",125,26,,Germany
+Croatia,22,"1,227.1",55.8,"2,855",129,21,,Germany
+Egypt,21,"6,352.4",302.5,"6,377",303,17,,Germany
+Russia,21,310.1,14.8,"1,456",69,17,,Germany
+Chile,20,"4,309.6",215.5,"2,835",141,18,,Germany
+Morocco,20,408.3,20.4,"10,543",527,17,,Germany
+Philippines,19,"8,408.3",442.5,"2,456",129,10,,Germany
+Indonesia,18,813.8,45.2,"1,678",93,17,,Germany
+Qatar,18,175.2,9.7,743,41,18,,Germany
+Colombia,17,165.8,9.8,"1,016",59,15,,Germany
+Bosnia-Herzegovina,16,997.1,62.3,"5,553",347,14,,Germany
+Kazakhstan,16,"2,179.5",136.2,"5,571",348,15,,Germany
+New Zealand,15,390.9,26.1,"2,423",161,9,,Germany
+Ukraine,15,456.8,30.5,"4,148",276,12,,Germany
+Hong Kong,13,370.0,28.5,"2,831",217,13,,Germany
+Luxembourg,12,412.5,34.4,521,43,12,,Germany
+North Macedonia,12,710.4,59.2,"4,239",353,12,,Germany
+Slovenia,12,286.2,23.8,"1,135",94,12,,Germany
+Kenya,11,317.0,28.8,651,59,10,,Germany
+Uzbekistan,10,271.7,27.2,"2,402",240,9,,Germany
+Norway,9,894.2,99.4,456,50,8,,Germany
+Peru,9,354.4,39.4,519,57,7,,Germany
+Israel,8,159.4,19.9,370,46,7,,Germany
+Georgia,7,92.6,13.2,639,91,7,,Germany
+Ghana,7,238.3,34.0,"1,256",179,6,,Germany
+Latvia,7,69.5,9.9,548,78,7,,Germany
+Nigeria,6,77.5,12.9,352,58,6,,Germany
+Tunisia,6,305.9,51.0,"2,741",456,6,,Germany
+Bangladesh,5,395.2,79.0,236,47,5,,Germany
+Estonia,5,38.2,7.6,256,51,5,,Germany
+Oman,5,328.4,65.7,519,103,4,,Germany
+Pakistan,5,129.7,25.9,657,131,5,,Germany
+Senegal,5,155.4,31.1,251,50,5,,Germany
+Algeria,4,49.3,12.3,276,69,2,,Germany
+Bahrain,4,439.9,110.0,"3,057",764,3,,Germany
+Cyprus,4,38.6,9.7,170,42,4,,Germany
+Ecuador,4,177.0,44.3,313,78,4,,Germany
+Moldova,4,188.9,47.2,719,179,4,,Germany
+Sri Lanka,4,123.6,30.9,"1,479",369,3,,Germany
+Cambodia,3,30.9,10.3,134,44,3,,Germany
+Dominican Republic,3,383.0,127.7,"1,278",426,3,,Germany
+Malta,3,6.7,2.2,72,24,3,,Germany
+Republic of Kosovo,3,96.4,32.1,363,121,3,,Germany
+Rwanda,3,157.3,52.4,445,148,3,,Germany
+Uruguay,3,639.2,213.1,462,154,3,,Germany
+Azerbaijan,2,342.4,171.2,178,89,2,,Germany
+Cuba,2,31.3,15.7,291,145,2,,Germany
+Kyrgyzstan,2,435.1,217.6,212,106,2,,Germany
+Namibia,2,"4,422.1",2211.1,"1,563",781,2,,Germany
+Paraguay,2,40.4,20.2,316,158,2,,Germany
+Tanzania,2,1.8,0.9,26,13,2,,Germany
+Uganda,2,2.4,1.2,8,4,2,,Germany
+Zimbabwe,2,9.4,4.7,26,13,1,,Germany
+Albania,1,2.5,2.5,45,45,1,,Germany
+Armenia,1,3.8,3.8,16,16,1,,Germany
+Bolivia,1,60.8,60.8,152,152,1,,Germany
+Cote d Ivoire,1,2.8,2.8,12,12,1,,Germany
+El Salvador,1,100.0,100.0,17,17,1,,Germany
+Fiji,1,87.0,87.0,192,192,1,,Germany
+Iraq,1,362.1,362.1,60,60,1,,Germany
+Macau,1,25.5,25.5,27,27,1,,Germany
+Mauritius,1,27.8,27.8,23,23,1,,Germany
+Montenegro,1,4.2,4.2,250,250,1,,Germany
+Myanmar,1,19.0,19.0,49,49,1,,Germany
+Suriname,1,.7,0.7,16,16,1,,Germany
+Total,"5,156","312,892.3",60.7,"705,460",136,"2,515",,Germany
+United States,513,"70,599.1",137.6,"78,346",152,333,,Japan
+India,201,"28,297.5",140.8,"79,378",394,138,,Japan
+Germany,134,"6,887.0",51.4,"8,356",62,120,,Japan
+United Kingdom,115,"22,096.0",192.1,"15,721",136,95,,Japan
+Vietnam,102,"9,384.7",92.0,"46,066",451,84,,Japan
+Mexico,86,"6,877.6",80.0,"34,761",404,73,,Japan
+China,79,"7,919.6",100.2,"24,555",310,61,,Japan
+France,67,"2,863.1",42.7,"2,481",37,58,,Japan
+Thailand,62,"2,803.4",45.2,"22,069",355,56,,Japan
+Spain,60,"2,083.7",34.7,"10,206",170,44,,Japan
+Turkey,59,"1,168.6",19.8,"5,345",90,47,,Japan
+Singapore,54,"3,680.3",68.2,"4,089",75,51,,Japan
+Canada,49,"10,865.4",221.7,"8,121",165,43,,Japan
+Malaysia,45,"4,609.5",102.4,"11,262",250,41,,Japan
+Philippines,45,"2,386.7",53.0,"15,555",345,35,,Japan
+Australia,44,"5,745.0",130.6,"7,833",178,37,,Japan
+Belgium,44,"1,237.5",28.1,"1,693",38,32,,Japan
+Poland,38,"1,670.4",44.0,"8,694",228,29,,Japan
+UAE,38,229.6,6.0,"1,239",32,37,,Japan
+South Korea,33,"3,816.5",115.7,"12,196",369,25,,Japan
+Brazil,32,"4,267.1",133.3,"8,911",278,26,,Japan
+Indonesia,28,"3,046.9",108.8,"9,514",339,27,,Japan
+Netherlands,28,417.6,14.9,"1,212",43,27,,Japan
+Taiwan,28,"1,252.4",44.7,"6,178",220,25,,Japan
+Saudi Arabia,25,"1,093.1",43.7,"1,481",59,21,,Japan
+Hungary,20,"1,281.6",64.1,"2,453",122,19,,Japan
+Italy,16,402.3,25.1,"5,349",334,12,,Japan
+Egypt,15,313.9,20.9,"6,541",436,15,,Japan
+Ireland,14,560.3,40.0,933,66,13,,Japan
+Denmark,13,829.2,63.8,969,74,12,,Japan
+South Africa,13,293.5,22.6,996,76,12,,Japan
+Portugal,12,139.2,11.6,880,73,10,,Japan
+Morocco,11,258.5,23.5,"1,489",135,9,,Japan
+Bangladesh,10,481.6,48.2,991,99,10,,Japan
+Colombia,10,116.1,11.6,572,57,10,,Japan
+Costa Rica,10,425.7,42.6,824,82,9,,Japan
+Finland,10,248.8,24.9,564,56,10,,Japan
+Qatar,10,"1,383.3",138.3,292,29,9,,Japan
+Sweden,10,665.1,66.5,"1,666",166,9,,Japan
+Switzerland,10,"1,398.7",139.9,579,57,10,,Japan
+Czech Republic,9,419.0,46.6,"3,161",351,9,,Japan
+New Zealand,9,254.7,28.3,"1,386",154,7,,Japan
+Hong Kong,8,370.0,46.3,703,87,8,,Japan
+Israel,8,85.6,10.7,311,38,8,,Japan
+Serbia,8,"1,782.5",222.8,"2,103",262,6,,Japan
+Austria,7,313.7,44.8,479,68,7,,Japan
+Kenya,7,414.4,59.2,333,47,6,,Japan
+Ukraine,7,179.2,25.6,440,62,6,,Japan
+Romania,6,84.2,14.0,746,124,6,,Japan
+Bulgaria,5,66.4,13.3,582,116,5,,Japan
+Argentina,4,278.6,69.7,"1,169",292,3,,Japan
+Cambodia,4,127.1,31.8,370,92,3,,Japan
+Russia,4,125.4,31.4,447,111,3,,Japan
+Slovakia,4,84.4,21.1,485,121,4,,Japan
+Bahrain,3,230.4,76.8,442,147,3,,Japan
+Kazakhstan,3,26.3,8.8,107,35,3,,Japan
+Nigeria,3,42.3,14.1,96,32,3,,Japan
+Tanzania,3,65.4,21.8,72,24,3,,Japan
+Uzbekistan,3,22.1,7.4,596,198,3,,Japan
+Chile,2,47.9,23.9,234,117,2,,Japan
+Cote d Ivoire,2,33.3,16.6,54,27,2,,Japan
+Cyprus,2,58.8,29.4,315,157,2,,Japan
+Guatemala,2,146.7,73.3,578,289,2,,Japan
+Kyrgyzstan,2,100.0,50.0,5,2,1,,Japan
+Lithuania,2,54.4,27.2,67,33,2,,Japan
+Luxembourg,2,17.4,8.7,24,12,2,,Japan
+Nicaragua,2,273.4,136.7,396,198,1,,Japan
+Norway,2,4.2,2.1,32,16,2,,Japan
+Peru,2,4.0,2.0,22,11,1,,Japan
+Senegal,2,37.3,18.6,71,35,2,,Japan
+Algeria,1,27.8,27.8,23,23,1,,Japan
+Armenia,1,3.8,3.8,16,16,1,,Japan
+Cameroon,1,27.8,27.8,23,23,1,,Japan
+Croatia,1,39.7,39.7,86,86,1,,Japan
+Dominican Republic,1,90.0,90.0,"1,500","1,500",1,,Japan
+El Salvador,1,136.7,136.7,198,198,1,,Japan
+Estonia,1,4.6,4.6,59,59,1,,Japan
+Ethiopia,1,60.0,60.0,880,880,1,,Japan
+Georgia,1,35.2,35.2,178,178,1,,Japan
+Ghana,1,27.8,27.8,23,23,1,,Japan
+Greece,1,10.8,10.8,85,85,1,,Japan
+Honduras,1,86.7,86.7,198,198,1,,Japan
+Macau,1,36.9,36.9,609,609,1,,Japan
+Malawi,1,27.8,27.8,23,23,1,,Japan
+Mali,1,27.8,27.8,23,23,1,,Japan
+Mauritius,1,27.8,27.8,23,23,1,,Japan
+Myanmar,1,34.0,34.0,"1,330","1,330",1,,Japan
+Oman,1,223.8,223.8,717,717,1,,Japan
+Panama,1,116.8,116.8,198,198,1,,Japan
+Rwanda,1,27.8,27.8,23,23,1,,Japan
+Slovenia,1,22.9,22.9,77,77,1,,Japan
+Sri Lanka,1,5.1,5.1,"1,301","1,301",1,,Japan
+Tunisia,1,27.8,27.8,29,29,1,,Japan
+Uganda,1,27.8,27.8,23,23,1,,Japan
+Zambia,1,27.8,27.8,23,23,1,,Japan
+Zimbabwe,1,27.8,27.8,23,23,1,,Japan
+Total,"2,346","221,058.3",94.2,"473,877",201,"1,325",,Japan
+Germany,285,"10,026.0",35.2,"20,065",70,218,,Netherlands
+United States,230,"18,950.0",82.4,"19,130",83,184,,Netherlands
+United Kingdom,148,"6,258.2",42.3,"10,707",72,116,,Netherlands
+France,138,"6,053.8",43.9,"14,741",106,89,,Netherlands
+Belgium,106,"2,184.7",20.6,"3,650",34,92,,Netherlands
+Spain,103,"5,092.7",49.4,"14,220",138,79,,Netherlands
+UAE,75,754.1,10.1,"3,115",41,72,,Netherlands
+India,66,"3,551.2",53.8,"32,200",487,43,,Netherlands
+Poland,63,"2,254.1",35.8,"12,928",205,55,,Netherlands
+China,47,"3,487.8",74.2,"11,167",237,38,,Netherlands
+Singapore,43,"1,692.0",39.3,"2,913",67,39,,Netherlands
+Portugal,42,987.8,23.5,"4,279",101,35,,Netherlands
+Canada,40,"6,478.3",162.0,"5,530",138,36,,Netherlands
+Romania,34,"2,667.1",78.4,"6,917",203,22,,Netherlands
+Turkey,34,"2,900.9",85.3,"4,724",138,30,,Netherlands
+Italy,31,"2,153.8",69.5,"1,731",55,25,,Netherlands
+Australia,30,937.7,31.3,"2,503",83,29,,Netherlands
+Denmark,30,375.0,12.5,678,22,29,,Netherlands
+Mexico,30,"1,383.9",46.1,"7,587",252,27,,Netherlands
+Brazil,24,"2,524.8",105.2,"2,852",118,18,,Netherlands
+Sweden,20,181.3,9.1,574,28,20,,Netherlands
+Vietnam,20,480.3,24.0,"2,260",113,16,,Netherlands
+South Africa,18,406.6,22.6,"2,075",115,18,,Netherlands
+Finland,17,983.0,57.8,457,26,17,,Netherlands
+Japan,17,289.8,17.0,686,40,16,,Netherlands
+Ireland,15,482.3,32.2,"1,498",99,13,,Netherlands
+Serbia,15,977.1,65.1,"1,486",99,12,,Netherlands
+Switzerland,15,282.6,18.8,366,24,14,,Netherlands
+Hungary,14,319.3,22.8,"1,131",80,12,,Netherlands
+Saudi Arabia,13,245.1,18.9,747,57,13,,Netherlands
+Czech Republic,12,149.1,12.4,"1,704",142,10,,Netherlands
+Malaysia,11,501.3,45.6,"2,048",186,11,,Netherlands
+South Korea,11,"1,547.5",140.7,"5,479",498,7,,Netherlands
+Taiwan,11,"1,229.4",111.8,"4,253",386,10,,Netherlands
+Argentina,10,"33,419.2",3341.9,"8,375",837,10,,Netherlands
+Colombia,9,46.9,5.2,210,23,9,,Netherlands
+Greece,9,43.1,4.8,356,39,8,,Netherlands
+Hong Kong,9,102.4,11.4,148,16,9,,Netherlands
+Austria,8,131.3,16.4,292,36,8,,Netherlands
+Lithuania,8,102.5,12.8,"1,141",142,8,,Netherlands
+Bulgaria,7,731.8,104.5,528,75,7,,Netherlands
+Indonesia,7,396.0,56.6,"1,370",195,7,,Netherlands
+New Zealand,7,153.0,21.9,744,106,6,,Netherlands
+Thailand,7,110.4,15.8,670,95,7,,Netherlands
+Ukraine,7,753.9,107.7,516,73,7,,Netherlands
+Russia,6,940.1,156.7,"6,172","1,028",5,,Netherlands
+Chile,5,111.0,22.2,437,87,5,,Netherlands
+Croatia,5,138.7,27.7,694,138,5,,Netherlands
+Norway,5,92.9,18.6,273,54,5,,Netherlands
+Panama,5,221.0,44.2,242,48,5,,Netherlands
+Philippines,5,71.2,14.2,852,170,5,,Netherlands
+Slovakia,5,300.8,60.2,"1,905",381,5,,Netherlands
+Costa Rica,4,56.6,14.2,78,19,3,,Netherlands
+Cyprus,4,53.1,13.3,54,13,4,,Netherlands
+Egypt,4,69.0,17.3,"1,334",333,3,,Netherlands
+Kenya,4,114.8,28.7,142,35,3,,Netherlands
+Uzbekistan,4,274.5,68.6,480,120,4,,Netherlands
+Armenia,3,63.1,21.0,151,50,2,,Netherlands
+Cambodia,3,53.0,17.7,559,186,3,,Netherlands
+Iraq,3,995.1,331.7,"2,034",678,1,,Netherlands
+Kazakhstan,3,52.8,17.6,102,34,3,,Netherlands
+Luxembourg,3,8.3,2.8,47,15,3,,Netherlands
+Morocco,3,327.6,109.2,"3,418","1,139",3,,Netherlands
+Nigeria,3,269.0,89.7,353,117,3,,Netherlands
+North Macedonia,3,22.0,7.3,118,39,3,,Netherlands
+Pakistan,3,154.9,51.6,424,141,3,,Netherlands
+Qatar,3,5.1,1.7,53,17,3,,Netherlands
+Slovenia,3,142.6,47.5,223,74,3,,Netherlands
+Suriname,3,8.0,2.7,584,194,3,,Netherlands
+Algeria,2,226.0,113.0,"2,139","1,069",2,,Netherlands
+Bangladesh,2,17.9,8.9,120,60,2,,Netherlands
+Cote d Ivoire,2,20.1,10.1,217,108,2,,Netherlands
+Fiji,2,40.7,20.4,426,213,1,,Netherlands
+Guatemala,2,174.7,87.3,192,96,2,,Netherlands
+Honduras,2,10.6,5.3,45,22,2,,Netherlands
+Uganda,2,50.5,25.3,278,139,2,,Netherlands
+Bahrain,1,1.2,1.2,14,14,1,,Netherlands
+Belarus,1,2.5,2.5,45,45,1,,Netherlands
+Bermuda,1,2.2,2.2,53,53,1,,Netherlands
+Bosnia-Herzegovina,1,37.2,37.2,420,420,1,,Netherlands
+Burundi,1,175.7,175.7,57,57,1,,Netherlands
+Ecuador,1,6.1,6.1,34,34,1,,Netherlands
+Estonia,1,"1,085.3",1085.3,200,200,1,,Netherlands
+Ghana,1,141.3,141.3,80,80,1,,Netherlands
+Guyana,1,37.9,37.9,140,140,1,,Netherlands
+Israel,1,1.6,1.6,22,22,1,,Netherlands
+Monaco,1,3.6,3.6,28,28,1,,Netherlands
+Namibia,1,.3,0.3,5,5,1,,Netherlands
+Nepal,1,6.3,6.3,51,51,1,,Netherlands
+Papua New Guinea,1,12.3,12.3,133,133,1,,Netherlands
+Republic of the Congo,1,"1,346.4",1346.4,215,215,1,,Netherlands
+Senegal,1,2.8,2.8,12,12,1,,Netherlands
+Sri Lanka,1,22.8,22.8,200,200,1,,Netherlands
+Trinidad & Tobago,1,.3,0.3,,,1,,Netherlands
+Tunisia,1,6.1,6.1,174,174,1,,Netherlands
+Uruguay,1,4.9,4.9,61,61,1,,Netherlands
+Zambia,1,100.0,100.0,30,30,1,,Netherlands
+Total,"2,023","132,861.6",65.7,"246,871",122,"1,138",,Netherlands
+United States,258,"100,654.8",390.1,"68,534",265,195,,South korea
+Vietnam,82,"17,320.6",211.2,"61,483",749,67,,South korea
+Germany,54,422.0,7.8,"1,181",21,48,,South korea
+India,50,"13,030.4",260.6,"25,653",513,39,,South korea
+China,46,"3,837.6",83.4,"12,924",280,34,,South korea
+Mexico,46,"3,879.0",84.3,"28,128",611,35,,South korea
+Poland,32,"2,856.7",89.3,"11,656",364,27,,South korea
+Hungary,31,"5,485.8",177.0,"11,133",359,23,,South korea
+Indonesia,29,"15,087.0",520.2,"21,072",726,21,,South korea
+UAE,29,"1,906.5",65.7,"1,856",64,28,,South korea
+United Kingdom,24,359.2,15.0,851,35,22,,South korea
+Canada,22,"2,360.8",107.3,"2,540",115,21,,South korea
+France,21,716.9,34.1,818,38,17,,South korea
+Singapore,21,709.5,33.8,"2,049",97,21,,South korea
+Turkey,18,273.6,15.2,"2,034",113,16,,South korea
+Japan,14,740.5,52.9,"3,269",233,12,,South korea
+Saudi Arabia,14,"2,391.2",170.8,"3,745",267,14,,South korea
+Malaysia,12,"2,023.7",168.6,"5,614",467,12,,South korea
+Australia,10,"40,927.8",4092.8,"6,251",625,8,,South korea
+Netherlands,10,119.5,11.9,504,50,10,,South korea
+Spain,10,751.4,75.1,796,79,9,,South korea
+Taiwan,10,351.6,35.2,"2,482",248,9,,South korea
+Thailand,8,239.2,29.9,"1,681",210,8,,South korea
+Morocco,6,346.4,57.7,"1,328",221,5,,South korea
+Belgium,5,12.8,2.6,41,8,4,,South korea
+Hong Kong,5,65.9,13.2,218,43,4,,South korea
+Kazakhstan,5,499.3,99.9,"2,008",401,5,,South korea
+Russia,5,512.7,102.5,"3,135",627,5,,South korea
+Bangladesh,4,369.9,92.5,"1,807",451,4,,South korea
+Colombia,4,57.7,14.4,225,56,4,,South korea
+Czech Republic,4,351.4,87.8,895,223,4,,South korea
+Brazil,3,283.4,94.5,"1,807",602,3,,South korea
+Costa Rica,3,100.3,33.4,410,136,2,,South korea
+Italy,3,130.5,43.5,259,86,3,,South korea
+Luxembourg,3,33.4,11.1,136,45,3,,South korea
+Philippines,3,486.9,162.3,545,181,3,,South korea
+Romania,3,23.7,7.9,203,67,3,,South korea
+Slovakia,3,259.4,86.5,"1,323",441,3,,South korea
+Switzerland,3,14.2,4.7,103,34,3,,South korea
+Uzbekistan,3,497.5,165.8,999,333,3,,South korea
+Cambodia,2,40.4,20.2,916,458,2,,South korea
+Denmark,2,11.4,5.7,51,25,2,,South korea
+Egypt,2,"4,086.8",2043.4,"1,433",716,2,,South korea
+Finland,2,14.3,7.2,77,38,2,,South korea
+Ghana,2,90.4,45.2,899,449,2,,South korea
+Oman,2,589.0,294.5,173,86,2,,South korea
+South Africa,2,31.3,15.7,41,20,2,,South korea
+Turkmenistan,2,127.4,63.7,198,99,1,,South korea
+Ukraine,2,21.6,10.8,119,59,2,,South korea
+Algeria,1,122.0,122.0,"1,625","1,625",1,,South korea
+Chile,1,7.1,7.1,11,11,1,,South korea
+Croatia,1,19.4,19.4,12,12,1,,South korea
+Estonia,1,6.6,6.6,28,28,1,,South korea
+Fiji,1,3.0,3.0,,,1,,South korea
+Guatemala,1,22.8,22.8,551,551,1,,South korea
+Ireland,1,35.0,35.0,28,28,1,,South korea
+Kuwait,1,77.8,77.8,204,204,1,,South korea
+Kyrgyzstan,1,12.3,12.3,133,133,1,,South korea
+Lithuania,1,12.7,12.7,39,39,1,,South korea
+Mongolia,1,25.5,25.5,27,27,1,,South korea
+Nigeria,1,6.9,6.9,46,46,1,,South korea
+Pakistan,1,12.3,12.3,133,133,1,,South korea
+Peru,1,116.0,116.0,207,207,1,,South korea
+Portugal,1,17.2,17.2,63,63,1,,South korea
+Sri Lanka,1,9.0,9.0,426,426,1,,South korea
+Tanzania,1,27.8,27.8,23,23,1,,South korea
+Tunisia,1,278.2,278.2,"6,000","6,000",1,,South korea
+Total,952,"226,315.2",237.7,"305,159",320,544,,South korea
+Saudi Arabia,191,"6,363.5",33.3,"15,957",83,171,,Uae
+India,127,"14,215.5",111.9,"51,533",405,79,,Uae
+Egypt,90,"62,776.7",697.5,"26,246",291,70,,Uae
+Qatar,75,488.6,6.5,"2,045",27,74,,Uae
+United Kingdom,58,"3,653.9",63.0,"3,678",63,50,,Uae
+United States,56,"15,705.9",280.5,"4,549",81,44,,Uae
+Oman,28,"1,941.3",69.3,"1,800",64,22,,Uae
+Turkey,27,885.0,32.8,"3,326",123,24,,Uae
+Spain,26,"7,999.5",307.7,"3,043",117,16,,Uae
+Singapore,24,"4,809.7",200.4,"3,371",140,23,,Uae
+Morocco,21,"5,435.4",258.8,"2,660",126,15,,Uae
+China,20,"1,244.7",62.2,"1,539",76,18,,Uae
+Bahrain,17,"1,288.8",75.8,"1,212",71,14,,Uae
+Canada,16,570.3,35.6,"1,390",86,13,,Uae
+Pakistan,15,748.3,49.9,"2,867",191,13,,Uae
+Australia,14,441.7,31.6,"1,032",73,13,,Uae
+Brazil,14,"2,757.9",197.0,"1,873",133,7,,Uae
+Kenya,14,"3,215.9",229.7,"11,526",823,11,,Uae
+Malaysia,14,"9,892.7",706.6,"4,542",324,13,,Uae
+Germany,13,479.3,36.9,446,34,12,,Uae
+Indonesia,13,"1,352.9",104.1,"2,045",157,11,,Uae
+Poland,13,216.3,16.6,"1,389",106,13,,Uae
+Kazakhstan,11,951.7,86.5,"4,135",375,10,,Uae
+Uzbekistan,11,"2,441.0",221.9,671,61,6,,Uae
+Iraq,10,"2,155.0",215.5,923,92,7,,Uae
+Netherlands,10,283.6,28.4,"1,092",109,10,,Uae
+Jordan,9,"2,800.2",311.1,"2,702",300,9,,Uae
+Nigeria,9,114.3,12.7,179,19,8,,Uae
+Philippines,9,198.5,22.1,"2,680",297,7,,Uae
+Romania,9,671.2,74.6,590,65,5,,Uae
+Greece,8,346.6,43.3,241,30,8,,Uae
+Hong Kong,8,340.7,42.6,662,82,8,,Uae
+Kuwait,8,651.9,81.5,896,112,8,,Uae
+South Africa,8,"20,332.1",2541.5,"3,184",398,6,,Uae
+Mexico,7,123.4,17.6,293,41,6,,Uae
+Russia,7,130.6,18.7,306,43,7,,Uae
+South Korea,7,137.7,19.7,450,64,7,,Uae
+Tanzania,7,495.2,70.7,829,118,6,,Uae
+Italy,6,143.7,23.9,"2,028",338,6,,Uae
+Sri Lanka,6,111.8,18.6,"1,955",325,6,,Uae
+Thailand,6,550.3,91.7,162,27,6,,Uae
+Armenia,5,547.6,109.5,933,186,3,,Uae
+Azerbaijan,5,"1,023.1",204.6,295,59,2,,Uae
+France,5,78.9,15.8,211,42,5,,Uae
+Tunisia,5,"9,154.0",1830.8,"3,430",686,3,,Uae
+Angola,4,562.5,140.6,"2,074",518,4,,Uae
+Argentina,4,681.6,170.4,445,111,4,,Uae
+Ethiopia,4,843.0,210.8,629,157,4,,Uae
+Ghana,4,31.0,7.8,73,18,4,,Uae
+Mozambique,4,250.7,62.7,468,117,4,,Uae
+Peru,4,893.0,223.3,"2,758",689,2,,Uae
+Sudan,4,255.8,64.0,438,109,4,,Uae
+Switzerland,4,14.3,3.6,44,11,4,,Uae
+Austria,3,9.2,3.1,32,10,3,,Uae
+Belgium,3,336.7,112.2,97,32,2,,Uae
+Cameroon,3,214.7,71.6,117,39,3,,Uae
+Colombia,3,66.7,22.2,45,15,2,,Uae
+Cote d Ivoire,3,95.0,31.7,555,185,3,,Uae
+Dominican Republic,3,312.9,104.3,594,198,1,,Uae
+Georgia,3,127.7,42.6,454,151,3,,Uae
+Rwanda,3,26.8,8.9,543,181,3,,Uae
+Senegal,3,"1,217.7",405.9,"3,055","1,018",3,,Uae
+Serbia,3,38.5,12.8,704,234,3,,Uae
+Somaliland,3,657.2,219.1,949,316,3,,Uae
+Tajikistan,3,990.3,330.1,135,45,1,,Uae
+Togo,3,193.4,64.5,112,37,3,,Uae
+Turkmenistan,3,"7,835.9",2612.0,"3,054","1,018",2,,Uae
+Uganda,3,71.5,23.8,132,44,3,,Uae
+Bangladesh,2,4.6,2.3,10,5,1,,Uae
+Bosnia-Herzegovina,2,9.5,4.8,192,96,2,,Uae
+Burkina Faso,2,17.7,8.8,55,27,2,,Uae
+Ecuador,2,285.4,142.7,931,465,1,,Uae
+Gabon,2,186.9,93.5,94,47,2,,Uae
+Hungary,2,30.3,15.2,184,92,2,,Uae
+Ireland,2,192.3,96.2,131,65,2,,Uae
+Israel,2,7.7,3.9,72,36,2,,Uae
+Japan,2,468.2,234.1,513,256,2,,Uae
+Maldives,2,673.7,336.9,797,398,2,,Uae
+Mauritania,2,"34,011.2",17005.6,"1,037",518,2,,Uae
+Namibia,2,203.5,101.8,80,40,2,,Uae
+Slovakia,2,30.3,15.2,171,85,2,,Uae
+Ukraine,2,60.3,30.1,92,46,2,,Uae
+Vietnam,2,67.8,33.9,166,83,2,,Uae
+Zimbabwe,2,515.0,257.5,"1,299",649,2,,Uae
+Albania,1,112.3,112.3,49,49,1,,Uae
+Belarus,1,2.5,2.5,45,45,1,,Uae
+Benin,1,6.5,6.5,18,18,1,,Uae
+Botswana,1,175.7,175.7,57,57,1,,Uae
+Brunei,1,1.5,1.5,9,9,1,,Uae
+Bulgaria,1,15.4,15.4,154,154,1,,Uae
+Cayman Islands,1,50.7,50.7,266,266,1,,Uae
+Chad,1,11.2,11.2,37,37,1,,Uae
+Croatia,1,14.7,14.7,6,6,1,,Uae
+Cyprus,1,14.7,14.7,65,65,1,,Uae
+Democratic Republic of Congo,1,11.2,11.2,37,37,1,,Uae
+Denmark,1,6.4,6.4,20,20,1,,Uae
+Djibouti,1,175.7,175.7,57,57,1,,Uae
+Eritrea,1,6.5,6.5,18,18,1,,Uae
+Estonia,1,2.5,2.5,45,45,1,,Uae
+Guinea,1,11.2,11.2,37,37,1,,Uae
+Kyrgyzstan,1,330.1,330.1,45,45,1,,Uae
+Latvia,1,"3,462.2",3462.2,"3,000","3,000",1,,Uae
+Lebanon,1,.8,0.8,12,12,1,,Uae
+Libya,1,175.7,175.7,57,57,1,,Uae
+Mali,1,11.2,11.2,37,37,1,,Uae
+Malta,1,3.6,3.6,28,28,1,,Uae
+North Macedonia,1,2.1,2.1,12,12,1,,Uae
+Norway,1,6.4,6.4,20,20,1,,Uae
+Panama,1,.7,0.7,16,16,1,,Uae
+Republic of the Congo,1,500.0,500.0,"2,152","2,152",1,,Uae
+Seychelles,1,175.7,175.7,57,57,1,,Uae
+South Sudan,1,6.5,6.5,18,18,1,,Uae
+Sweden,1,3.6,3.6,10,10,1,,Uae
+Taiwan,1,25.5,25.5,27,27,1,,Uae
+Trinidad & Tobago,1,.7,0.7,16,16,1,,Uae
+Yemen,1,362.1,362.1,60,60,1,,Uae
+Zambia,1,173.8,173.8,57,57,1,,Uae
+Total,"1,204","248,616.7",206.5,"206,791",171,637,,Uae
+United States,"1,274","52,861.5",41.5,"85,484",67,996,,United kingdom
+UAE,710,"4,288.6",6.0,"19,873",27,673,,United kingdom
+Germany,437,"15,714.2",36.0,"13,717",31,387,,United kingdom
+Spain,317,"12,751.7",40.2,"27,207",85,238,,United kingdom
+India,288,"8,103.4",28.1,"88,299",306,216,,United kingdom
+Australia,282,"28,134.8",99.8,"21,106",74,235,,United kingdom
+Ireland,278,"5,442.4",19.6,"19,020",68,211,,United kingdom
+France,249,"5,738.1",23.0,"8,710",34,217,,United kingdom
+Netherlands,221,"4,328.9",19.6,"10,174",46,207,,United kingdom
+Singapore,219,"4,843.6",22.1,"7,723",35,207,,United kingdom
+Canada,167,"9,456.1",56.6,"11,230",67,134,,United kingdom
+Poland,158,"3,794.6",24.0,"24,895",157,122,,United kingdom
+China,127,"5,915.9",46.6,"12,988",102,107,,United kingdom
+Saudi Arabia,117,"4,952.7",42.3,"15,629",133,109,,United kingdom
+South Africa,101,"5,762.3",57.1,"8,473",83,90,,United kingdom
+Portugal,94,"11,248.5",119.7,"10,396",110,85,,United kingdom
+Belgium,91,"1,708.3",18.8,"4,052",44,82,,United kingdom
+Italy,91,"6,057.5",66.6,"5,741",63,83,,United kingdom
+Brazil,78,"5,059.3",64.9,"7,430",95,58,,United kingdom
+Hong Kong,77,"2,334.1",30.3,"4,639",60,72,,United kingdom
+Mexico,75,"3,798.2",50.6,"13,748",183,55,,United kingdom
+Japan,69,"2,786.8",40.4,"4,923",71,65,,United kingdom
+Malaysia,65,"3,831.2",58.9,"10,070",154,59,,United kingdom
+Denmark,58,441.9,7.6,"1,396",24,58,,United kingdom
+Turkey,55,"4,909.4",89.3,"3,693",67,46,,United kingdom
+Qatar,51,"6,540.4",128.2,"3,660",71,50,,United kingdom
+Romania,49,"1,355.8",27.7,"25,358",517,33,,United kingdom
+South Korea,47,"2,090.6",44.5,"2,817",59,40,,United kingdom
+Switzerland,42,304.0,7.2,660,15,41,,United kingdom
+Sweden,38,860.0,22.6,"1,171",30,36,,United kingdom
+Philippines,36,819.1,22.8,"9,833",273,30,,United kingdom
+New Zealand,35,"1,036.1",29.6,"1,734",49,30,,United kingdom
+Vietnam,28,451.7,16.1,"1,477",52,21,,United kingdom
+Hungary,27,805.7,29.8,"4,242",157,25,,United kingdom
+Bulgaria,26,370.4,14.2,"2,082",80,23,,United kingdom
+Czech Republic,26,802.4,30.9,"3,576",137,23,,United kingdom
+Taiwan,26,"1,069.2",41.1,"1,682",64,24,,United kingdom
+Chile,25,"13,738.9",549.6,"7,696",307,21,,United kingdom
+Egypt,25,"17,541.9",701.7,"7,435",297,23,,United kingdom
+Colombia,24,243.8,10.2,"1,639",68,23,,United kingdom
+Greece,24,"1,229.0",51.2,681,28,21,,United kingdom
+Kenya,24,"3,757.6",156.6,"3,127",130,21,,United kingdom
+Nigeria,23,968.4,42.1,"2,213",96,22,,United kingdom
+Morocco,22,"4,225.2",192.1,"3,145",142,20,,United kingdom
+Finland,21,"1,568.9",74.7,"1,053",50,21,,United kingdom
+Thailand,21,400.7,19.1,"1,137",54,21,,United kingdom
+Lithuania,20,222.7,11.1,"1,240",62,19,,United kingdom
+Indonesia,19,913.4,48.1,"1,647",86,19,,United kingdom
+Austria,18,418.9,23.3,845,46,17,,United kingdom
+Norway,18,654.6,36.4,657,36,15,,United kingdom
+Luxembourg,16,356.8,22.3,499,31,16,,United kingdom
+Cyprus,15,185.3,12.4,829,55,15,,United kingdom
+Serbia,15,390.2,26.0,780,52,15,,United kingdom
+Ukraine,14,187.2,13.4,662,47,12,,United kingdom
+Argentina,13,"2,893.2",222.6,"3,136",241,11,,United kingdom
+Costa Rica,13,29.5,2.3,647,49,10,,United kingdom
+Ghana,13,691.6,53.2,"5,779",444,12,,United kingdom
+Israel,12,"2,524.1",210.3,"1,909",159,10,,United kingdom
+Malta,12,172.5,14.4,442,36,12,,United kingdom
+Oman,11,325.5,29.6,708,64,10,,United kingdom
+Pakistan,11,81.3,7.4,"1,475",134,9,,United kingdom
+Croatia,10,122.6,12.3,532,53,7,,United kingdom
+Peru,10,52.3,5.2,169,16,9,,United kingdom
+Bangladesh,9,92.7,10.3,"1,680",186,9,,United kingdom
+Uruguay,9,253.4,28.2,"1,478",164,8,,United kingdom
+Bahrain,8,21.9,2.7,728,91,8,,United kingdom
+Monaco,8,48.6,6.1,166,20,8,,United kingdom
+Slovakia,8,209.3,26.2,703,87,8,,United kingdom
+Sri Lanka,8,91.9,11.5,"1,103",137,7,,United kingdom
+Zambia,8,"1,031.1",128.9,"2,966",370,3,,United kingdom
+Zimbabwe,8,"7,075.7",884.5,"2,197",274,6,,United kingdom
+Kazakhstan,7,667.7,95.4,433,61,6,,United kingdom
+Tanzania,7,745.7,106.5,"1,877",268,7,,United kingdom
+Ethiopia,6,438.3,73.0,220,36,2,,United kingdom
+Mozambique,6,"5,177.9",863.0,"1,414",235,5,,United kingdom
+Albania,5,225.6,45.1,454,90,2,,United kingdom
+Armenia,5,47.8,9.6,764,152,5,,United kingdom
+Bermuda,5,54.8,11.0,139,27,5,,United kingdom
+Bosnia-Herzegovina,5,297.1,59.4,274,54,4,,United kingdom
+Cayman Islands,5,28.1,5.6,195,39,5,,United kingdom
+Cote d Ivoire,5,"1,109.4",221.9,"1,339",267,5,,United kingdom
+Latvia,5,34.5,6.9,261,52,4,,United kingdom
+North Macedonia,5,309.4,61.9,166,33,5,,United kingdom
+Sierra Leone,5,315.9,63.2,"5,255","1,051",3,,United kingdom
+Estonia,4,34.2,8.6,270,67,4,,United kingdom
+Rwanda,4,105.2,26.3,635,158,4,,United kingdom
+Trinidad & Tobago,4,310.8,77.7,453,113,3,,United kingdom
+Uzbekistan,4,66.2,16.6,765,191,4,,United kingdom
+Botswana,3,26.8,8.9,123,41,3,,United kingdom
+Cambodia,3,50.1,16.7,293,97,3,,United kingdom
+Dominican Republic,3,"1,004.4",334.8,272,90,3,,United kingdom
+Iceland,3,10.8,3.6,84,28,3,,United kingdom
+Iraq,3,436.5,145.5,240,80,3,,United kingdom
+Jordan,3,77.5,25.8,187,62,2,,United kingdom
+Kuwait,3,5.3,1.8,56,18,3,,United kingdom
+Moldova,3,89.6,29.9,219,73,3,,United kingdom
+Namibia,3,267.7,89.2,"1,825",608,2,,United kingdom
+Papua New Guinea,3,57.8,19.3,252,84,3,,United kingdom
+Azerbaijan,2,206.3,103.2,62,31,2,,United kingdom
+Cameroon,2,185.2,92.6,83,41,2,,United kingdom
+Georgia,2,59.4,29.7,543,271,2,,United kingdom
+Guinea,2,"8,600.0",4300.0,"6,000","3,000",1,,United kingdom
+Jamaica,2,5.0,2.5,"1,439",719,2,,United kingdom
+Kyrgyzstan,2,111.5,55.8,274,137,2,,United kingdom
+Liberia,2,"2,621.3",1310.7,"3,593","1,796",2,,United kingdom
+Liechtenstein,2,18.8,9.4,58,29,2,,United kingdom
+Macau,2,87.0,43.5,474,237,2,,United kingdom
+Mauritius,2,12.2,6.1,348,174,2,,United kingdom
+Nepal,2,71.9,36.0,530,265,2,,United kingdom
+Russia,2,232.7,116.3,"1,046",523,2,,United kingdom
+Senegal,2,299.5,149.8,"1,989",994,2,,United kingdom
+Slovenia,2,59.1,29.6,98,49,2,,United kingdom
+Uganda,2,12.3,6.2,38,19,2,,United kingdom
+Antigua and Barbuda,1,4.7,4.7,25,25,1,,United kingdom
+Bahamas,1,32.5,32.5,36,36,1,,United kingdom
+Benin,1,9.5,9.5,26,26,1,,United kingdom
+Burkina Faso,1,61.3,61.3,500,500,1,,United kingdom
+Democratic Republic of Congo,1,27.8,27.8,23,23,1,,United kingdom
+El Salvador,1,6.9,6.9,24,24,1,,United kingdom
+Fiji,1,23.7,23.7,900,900,1,,United kingdom
+Grenada,1,2.2,2.2,53,53,1,,United kingdom
+Guyana,1,2.2,2.2,53,53,1,,United kingdom
+Lebanon,1,.7,0.7,10,10,1,,United kingdom
+Montenegro,1,10.1,10.1,85,85,1,,United kingdom
+Panama,1,16.8,16.8,11,11,1,,United kingdom
+Paraguay,1,4.7,4.7,25,25,1,,United kingdom
+Republic of Kosovo,1,2.5,2.5,45,45,1,,United kingdom
+Togo,1,27.8,27.8,23,23,1,,United kingdom
+Tonga,1,25.5,25.5,27,27,1,,United kingdom
+Tunisia,1,3.7,3.7,20,20,1,,United kingdom
+Vanuatu,1,6.3,6.3,51,51,1,,United kingdom
+Total,"6,809","318,336.1",46.8,"596,988",87,"3,910",,United kingdom
+India,"1,436","72,773.8",50.7,"652,907",454,966,,United states
+United Kingdom,"1,223","87,317.6",71.4,"110,860",90,962,,United states
+Germany,710,"66,610.3",93.8,"53,692",75,576,,United states
+Canada,649,"53,623.7",82.6,"63,436",97,514,,United states
+UAE,641,"11,806.3",18.4,"28,485",44,575,,United states
+Mexico,576,"59,175.8",102.7,"171,606",297,457,,United states
+France,499,"28,755.0",57.6,"40,808",81,400,,United states
+Spain,485,"36,689.7",75.6,"72,914",150,325,,United states
+Australia,417,"24,394.2",58.5,"41,553",99,321,,United states
+Ireland,413,"34,090.6",82.5,"41,309",100,323,,United states
+Singapore,385,"10,725.5",27.9,"23,889",62,365,,United states
+Poland,378,"18,537.7",49.0,"96,302",254,261,,United states
+Costa Rica,301,"3,539.8",11.8,"41,903",139,220,,United states
+China,297,"21,142.0",71.2,"73,420",247,241,,United states
+Netherlands,257,"9,852.3",38.3,"17,662",68,240,,United states
+Japan,244,"29,137.3",119.4,"49,649",203,210,,United states
+Brazil,212,"25,040.8",118.1,"32,127",151,164,,United states
+Saudi Arabia,199,"14,105.3",70.9,"18,339",92,170,,United states
+Colombia,174,"3,892.1",22.4,"30,673",176,138,,United states
+Italy,172,"14,706.6",85.5,"15,206",88,137,,United states
+Belgium,169,"6,717.0",39.7,"10,414",61,142,,United states
+South Korea,140,"11,049.3",78.9,"18,794",134,125,,United states
+Switzerland,139,"9,412.0",67.7,"6,182",44,130,,United states
+Malaysia,137,"36,161.7",264.0,"35,083",256,118,,United states
+Philippines,131,"4,669.7",35.6,"41,080",313,116,,United states
+Portugal,123,"4,243.9",34.5,"12,161",98,103,,United states
+Turkey,121,"4,008.0",33.1,"8,284",68,106,,United states
+Israel,112,"28,818.5",257.3,"12,578",112,100,,United states
+Vietnam,99,"16,724.4",168.9,"25,420",256,91,,United states
+Qatar,95,"13,848.3",145.8,"7,716",81,92,,United states
+Romania,85,"1,556.7",18.3,"11,877",139,65,,United states
+Taiwan,84,"4,205.8",50.1,"16,150",192,75,,United states
+South Africa,83,"4,241.0",51.1,"10,305",124,69,,United states
+Hong Kong,82,"3,656.1",44.6,"8,939",109,80,,United states
+Sweden,75,"1,835.6",24.5,"3,342",44,69,,United states
+Denmark,70,"1,060.9",15.2,"2,473",35,63,,United states
+Thailand,68,"10,347.5",152.2,"23,749",349,66,,United states
+Indonesia,63,"21,750.0",345.2,"14,062",223,51,,United states
+Czech Republic,61,"5,112.0",83.8,"14,213",233,50,,United states
+Chile,60,"4,522.6",75.4,"6,918",115,52,,United states
+New Zealand,59,"7,152.5",121.2,"6,824",115,50,,United states
+Argentina,57,"3,463.0",60.8,"9,204",161,49,,United states
+Finland,57,"2,549.1",44.7,"1,851",32,52,,United states
+Egypt,54,"4,508.1",83.5,"9,930",183,50,,United states
+Serbia,45,"1,277.6",28.4,"3,750",83,39,,United states
+Hungary,40,959.7,24.0,"4,378",109,31,,United states
+Lithuania,37,501.3,13.5,"3,229",87,33,,United states
+Nigeria,36,"5,630.3",156.4,"5,035",139,33,,United states
+Ukraine,36,938.3,26.1,"2,656",73,29,,United states
+Kenya,35,"1,733.1",49.5,"5,677",162,34,,United states
+Austria,34,757.0,22.3,"2,526",74,28,,United states
+Morocco,34,956.0,28.1,"5,703",167,28,,United states
+Dominican Republic,31,"1,597.9",51.5,"6,389",206,29,,United states
+Peru,30,"1,059.9",35.3,"3,120",104,28,,United states
+Russia,28,"5,830.5",208.2,"4,020",143,22,,United states
+Bulgaria,25,353.9,14.2,"3,246",129,19,,United states
+Norway,25,839.5,33.6,870,34,23,,United states
+Luxembourg,23,361.0,15.7,669,29,22,,United states
+Uruguay,22,463.7,21.1,"2,505",113,21,,United states
+Cyprus,21,278.4,13.3,886,42,20,,United states
+Greece,21,"1,006.8",47.9,"1,099",52,20,,United states
+Bangladesh,19,977.8,51.5,"4,837",254,15,,United states
+Bahrain,17,316.9,18.6,"1,314",77,15,,United states
+Kazakhstan,17,"1,709.0",100.5,"2,431",143,16,,United states
+Georgia,16,616.5,38.5,"1,872",117,14,,United states
+Ghana,15,793.7,52.9,"1,343",89,14,,United states
+Panama,15,"2,185.5",145.7,"1,957",130,14,,United states
+Croatia,14,528.5,37.8,"2,472",176,13,,United states
+El Salvador,14,283.6,20.3,"3,029",216,13,,United states
+Pakistan,14,381.4,27.2,"3,389",242,14,,United states
+Slovakia,14,716.1,51.1,"3,318",237,12,,United states
+Guatemala,13,736.2,56.6,"2,423",186,11,,United states
+North Macedonia,13,160.1,12.3,"2,335",179,9,,United states
+Armenia,12,145.5,12.1,"2,490",207,12,,United states
+Ecuador,12,227.3,18.9,584,48,11,,United states
+Jordan,11,363.9,33.1,"1,948",177,11,,United states
+Sri Lanka,11,"1,007.7",91.6,"1,532",139,11,,United states
+Bosnia-Herzegovina,10,283.6,28.4,"1,089",108,6,,United states
+Uzbekistan,10,"1,212.1",121.2,"2,778",277,10,,United states
+Bermuda,8,267.5,33.4,427,53,8,,United states
+Latvia,8,188.4,23.6,502,62,8,,United states
+Namibia,8,"1,446.9",180.9,680,85,5,,United states
+Oman,8,"2,321.7",290.2,"1,738",217,7,,United states
+Cote d Ivoire,7,167.2,23.9,314,44,7,,United states
+Honduras,7,111.6,15.9,"1,760",251,7,,United states
+Paraguay,7,453.2,64.7,"1,840",262,6,,United states
+Azerbaijan,6,112.0,18.7,"1,188",198,6,,United states
+Democratic Republic of Congo,6,"1,118.1",186.3,381,63,6,,United states
+Jamaica,6,149.1,24.8,"5,649",941,5,,United states
+Malta,6,44.0,7.3,171,28,6,,United states
+Guyana,5,"26,775.7",5355.1,"7,484","1,496",3,,United states
+Iceland,5,345.6,69.1,430,86,5,,United states
+Lebanon,5,11.2,2.2,89,17,5,,United states
+Slovenia,5,83.2,16.6,246,49,5,,United states
+Tanzania,5,315.6,63.1,347,69,5,,United states
+Kuwait,4,7.4,1.9,80,20,4,,United states
+Monaco,4,6.5,1.6,57,14,4,,United states
+Nepal,4,197.3,49.3,836,209,4,,United states
+Angola,3,246.2,82.1,350,116,3,,United states
+Cambodia,3,65.5,21.8,378,126,3,,United states
+Estonia,3,47.8,15.9,338,112,3,,United states
+Fiji,3,572.1,190.7,246,82,1,,United states
+Mauritius,3,64.2,21.4,307,102,3,,United states
+Moldova,3,64.5,21.5,236,78,3,,United states
+Nicaragua,3,31.2,10.4,661,220,2,,United states
+Sierra Leone,3,223.0,74.3,502,167,3,,United states
+Trinidad & Tobago,3,8.5,2.8,66,22,3,,United states
+Albania,2,5.0,2.5,90,45,2,,United states
+Algeria,2,126.1,63.0,93,46,2,,United states
+Belarus,2,42.3,21.1,111,55,2,,United states
+Belize,2,93.8,46.9,952,476,2,,United states
+Botswana,2,22.0,11.0,204,102,1,,United states
+Ethiopia,2,122.1,61.0,394,197,2,,United states
+French Polynesia,2,381.4,190.7,164,82,1,,United states
+Gambia,2,19.0,9.5,52,26,2,,United states
+Laos,2,314.2,157.1,869,434,2,,United states
+Montenegro,2,16.0,8.0,136,68,2,,United states
+Myanmar,2,97.8,48.9,352,176,2,,United states
+Republic of Kosovo,2,64.1,32.0,178,89,2,,United states
+Rwanda,2,138.9,69.5,473,236,2,,United states
+Suriname,2,8.7,4.3,254,127,2,,United states
+Tunisia,2,277.5,138.8,521,260,2,,United states
+Uganda,2,136.6,68.3,103,51,2,,United states
+Zambia,2,479.9,239.9,797,398,2,,United states
+Bahamas,1,2.2,2.2,53,53,1,,United states
+Bhutan,1,190.7,190.7,82,82,1,,United states
+Brunei,1,190.7,190.7,82,82,1,,United states
+Cameroon,1,4.7,4.7,62,62,1,,United states
+Guinea,1,27.8,27.8,23,23,1,,United states
+Lesotho,1,175.7,175.7,57,57,1,,United states
+Liberia,1,123.4,123.4,80,80,1,,United states
+Macau,1,12.3,12.3,133,133,1,,United states
+Madagascar,1,123.4,123.4,80,80,1,,United states
+Maldives,1,190.7,190.7,82,82,1,,United states
+Mozambique,1,123.4,123.4,80,80,1,,United states
+Niger,1,4.7,4.7,62,62,1,,United states
+Palestine,1,22.1,22.1,63,63,1,,United states
+Seychelles,1,.3,0.3,3,3,1,,United states
+Sudan,1,9.5,9.5,26,26,1,,United states
+Zimbabwe,1,123.4,123.4,80,80,1,,United states
+Total,"12,853","913,836.1",71.1,"2,125,282",165,"6,109",,United states
