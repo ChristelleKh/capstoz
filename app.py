@@ -471,4 +471,3 @@ with tabs[5]:
             st.info("No numeric sector value column found.")
     else:
         st.info("No sectors data loaded.")
-
